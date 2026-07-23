@@ -76,51 +76,106 @@ export default function Index() {
         </div>
       </section>
 
-      {/* OFFLINE LISTENING */}
-      <section className="offline">
-        <h3 className="offline-title">Listen While Offline</h3>
+    {/* OFFLINE LISTENING */}
+<section className="offline">
+  <h3 className="offline-title">Listen on Apple and Android APPS</h3>
 
-        <p className="offline-desc">
-          NeonVerse Radio is available across multiple radio platforms.  
-          Tune in anywhere and experience The Sound of Future City.
-        </p>
+  <p className="offline-desc">
+    NeonVerse Radio is available across multiple radio platforms.
+    Tune in anywhere and experience The Sound of Future City.
+  </p>
 
-        <ul className="offline-list">
-          <li><a href="https://onlineradiobox.com" className="link">OnlineRadioBox</a></li>
-          <li><a href="https://streema.com" className="link">Streema</a></li>
-          <li><a href="https://canadaradiostations.com" className="link">CanadaRadioStations</a></li>
-          <li><a href="https://radoxo.com" className="link">Radoxo</a></li>
-          <li><a href="https://radiotune.fm" className="link">RadioTune.fm</a></li>
-          <li><a href="https://mytuner-radio.com" className="link">myTunerRadio</a></li>
-        </ul>
-      </section>
+  <ul className="offline-list">
+    <li>
+      <a href="https://onlineradiobox.com" className="link">
+        OnlineRadioBox
+      </a>
+    </li>
 
-      {/* SOCIAL LINKS */}
-      <section className="social">
-        <p className="social-text">
-          Check our official Instagram and Facebook for news and updates:
-        </p>
+    <li>
+      <a href="https://streema.com" className="link">
+        Streema
+      </a>
+    </li>
 
-        <p>
-          <a
-            href="https://www.instagram.com/neondawn.project/"
-            className="link"
-            target="_blank"
-          >
-            Instagram — Neon Dawn Project
-          </a>
-        </p>
+    <li>
+      <a href="https://canadaradiostations.com" className="link">
+        CanadaRadioStations
+      </a>
+    </li>
 
-        <p>
-          <a
-            href="https://www.facebook.com/NeonVerseRadio"
-            className="link"
-            target="_blank"
-          >
-            Facebook — NeonVerse Radio
-          </a>
-        </p>
-      </section>
+    <li>
+      <a href="https://radoxo.com" className="link">
+        Radoxo
+      </a>
+    </li>
+
+    <li>
+      <a href="https://radiotune.fm" className="link">
+        RadioTune.fm
+      </a>
+    </li>
+
+    <li>
+      <a href="https://mytuner-radio.com" className="link">
+        myTunerRadio
+      </a>
+    </li>
+  </ul>
+</section>
+
+<h3>Neon Dawn — Audio Engineer, NeonVerse Radio</h3>
+
+<p>
+  Contact 1: <strong>neonverseradio@gmail.com</strong>
+</p>
+
+<p>
+  Contact 2: <strong>neondawn.project@gmail.com</strong>
+</p>
+
+<p className="lyric">
+  “Radio low, the sky feels wide.”
+  <br />
+  <span className="lyric-credit">© 2026 Neon Dawn</span>
+</p>
+
+<div style={{ marginTop: "40px", color: "#888", fontSize: "14px" }}>
+  © 2026 NeonVerse Radio – Toronto, Canada
+  <br />
+  Independent Online Radio Station
+  <br />
+  The Sound of Future City
+</div>
+
+{/* SOCIAL LINKS */}
+<section className="social">
+  <p className="social-text">
+    Check our official Instagram and Facebook for news and updates:
+  </p>
+
+  <p>
+    <a
+      href="https://www.instagram.com/neondawn.project/"
+      className="link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram — Neon Dawn Project
+    </a>
+  </p>
+
+  <p>
+    <a
+      href="https://www.facebook.com/NeonVerseRadio"
+      className="link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Facebook — NeonVerse Radio
+    </a>
+  </p>
+</section>
 
       {/* FOOTER TRANSMISSION */}
       <footer className="footer">
