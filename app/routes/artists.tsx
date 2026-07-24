@@ -4,144 +4,138 @@ import { Link, useNavigate } from "react-router";
 import { ARTISTS } from "../types/artists-meta";
 
 export default function Artists() {
-const navigate = useNavigate();
-const [query, setQuery] = useState("");
+  const navigate = useNavigate();
+  const [query, setQuery] = useState("");
 
-const filtered = useMemo(() => {
-if (!query) return ARTISTS;
+  const filtered = useMemo(() => {
+    if (!query) return ARTISTS;
 
-return ARTISTS.filter((artist) =>
-  artist.name.toLowerCase().includes(query.toLowerCase())
-);
+    return ARTISTS.filter((artist) =>
+      artist.name.toLowerCase().includes(query.toLowerCase())
+    );
+  }, [query]);
 
-}, [query]);
+  const previewArtist = useMemo(() => {
+    if (query.trim().length < 4) return null;
 
-const previewArtist = useMemo(() => {
-if (query.trim().length < 4) return null;
+    return ARTISTS.find((artist) =>
+      artist.name.toLowerCase().includes(query.trim().toLowerCase())
+    );
+  }, [query]);
 
-return ARTISTS.find((artist) =>
-  artist.name.toLowerCase().includes(query.trim().toLowerCase())
-);
+  return (
+    <main className="min-h-screen bg-black text-cyan-300 flex flex-col items-center px-6 py-16">
 
-}, [query]);
+      <h1 className="text-5xl font-black uppercase tracking-[0.4em] mb-12">
+        Artists
+      </h1>
 
-return (
-<main className="min-h-screen bg-black text-cyan-300 flex flex-col items-center px-6 py-16">
+      <input
+        type="text"
+        placeholder="Search artist..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && previewArtist) {
+            navigate(`/${previewArtist.slug}`);
+          }
+        }}
+        className="
+          w-full
+          max-w-md
+          rounded-md
+          border
+          border-cyan-400/40
+          bg-cyan-400/10
+          px-4
+          py-3
+          text-center
+          text-xl
+          outline-none
+          placeholder:text-cyan-400/40
+          focus:border-cyan-400
+        "
+      />
 
-  <h1 className="text-5xl font-black uppercase tracking-[0.4em] mb-12">
-    Artists
-  </h1>
-
-  <input
-    type="text"
-    placeholder="Search artist..."
-    value={query}
-    onChange={(e) => setQuery(e.target.value)}
-    onKeyDown={(e) => {
-      if (e.key === "Enter" && previewArtist) {
-
-        // =====================================
-        // ARTIST LINK LOCATION #1
-        // Search result + Enter key
-        //
-        // This generates:
-        // /lynney
-        //
-        // because the route is:
-        // route("lynney", "routes/lynney.tsx")
-        // =====================================
-
-        navigate(`/${previewArtist.slug}`);
-      }
-    }}
-    className="
-      w-full
-      max-w-md
-      rounded-md
-      border
-      border-cyan-400/40
-      bg-cyan-400/10
-      px-4
-      py-3
-      text-center
-      text-xl
-      outline-none
-      placeholder:text-cyan-400/40
-      focus:border-cyan-400
-    "
-  />
-
-  <div className="h-72 flex items-center justify-center mt-12">
-
-    {previewArtist && (
-      <Link
-
-        // =====================================
-        // ARTIST LINK LOCATION #2
-        // Search preview image/card
-        //
-        // This generates:
-        // /lynney
-        // =====================================
-
-        to={`/${previewArtist.slug}`}
-
-        className="flex flex-col items-center gap-4 animate-fade-in"
-      >
-        <img
-          src={previewArtist.img}
-          alt={previewArtist.name}
-          className="
-            w-56
-            h-56
-            rounded-lg
-            object-cover
-            border
-            border-cyan-400
-            shadow-lg
-            hover:scale-105
-            transition
-          "
-        />
-
-        <h2 className="text-3xl font-bold">
-          {previewArtist.name}
-        </h2>
-      </Link>
-    )}
-
-  </div>
-
-  <ul className="mt-12 space-y-3 text-xl">
-
-    {filtered
-      .filter((artist) => artist.slug !== previewArtist?.slug)
-      .map((artist) => (
-        <li key={artist.slug}>
-
+      <div className="h-72 flex items-center justify-center mt-12">
+        {previewArtist && (
           <Link
-
-            // =====================================
-            // ARTIST LINK LOCATION #3
-            // Artist list links
-            //
-            // This generates:
-            // /lynney
-            // =====================================
-
-            to={`/${artist.slug}`}
-
-            className="text-purple-400 hover:text-cyan-300 transition"
+            to={`/${previewArtist.slug}`}
+            className="flex flex-col items-center gap-4 animate-fade-in"
           >
-            {artist.name}
+            <img
+              src={previewArtist.img}
+              alt={previewArtist.name}
+              className="
+                w-56
+                h-56
+                rounded-lg
+                object-cover
+                border
+                border-cyan-400
+                shadow-lg
+                hover:scale-105
+                transition
+              "
+            />
+            <h2 className="text-3xl font-bold">{previewArtist.name}</h2>
           </Link>
+        )}
+      </div>
 
-        </li>
-      ))}
+      <ul className="mt-12 space-y-3 text-xl">
+        {filtered
+          .filter((artist) => artist.slug !== previewArtist?.slug)
+          .map((artist) => (
+            <li key={artist.slug}>
+              <Link
+                to={`/${artist.slug}`}
+                className="text-purple-400 hover:text-cyan-300 transition"
+              >
+                {artist.name}
+              </Link>
+            </li>
+          ))}
+      </ul>
 
-  </ul>
+      {/* Neonverse Upcoming Artist Section */}
+      <div className="mt-20 text-center animate-fade-in">
+        <h2 className="text-3xl font-bold text-purple-400 tracking-wide mb-8">
+          Neonverse Upcoming Artist
+        </h2>
 
-</main>
+        <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center">
+            <img src="/martyrs.png" alt="Martyrs" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Martyrs</p>
+          </div>
 
-);
+          <div className="flex flex-col items-center">
+            <img src="/meeka.png" alt="Meeka" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Meeka</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="/karl.png" alt="Karl – WBA" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Karl – WBA</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="/ilovemakkonen.png" alt="Ilovemakkonen" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <img src="/ytc.png" alt="YTC" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg mt-4" />
+            <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen / YTC</p>
+          </div>
+        </div>
+
+        <div className="mt-10 text-purple-300 leading-relaxed">
+          <p>A new breed of Future City transmission is coming on air.</p>
+          <p>Signal boosted.</p>
+          <p>Artists amplified.</p>
+          <p>Neon fully powered.</p>
+          <p className="mt-2 text-cyan-300 font-bold">Coming soon</p>
+        </div>
+      </div>
+
+    </main>
+  );
 }
