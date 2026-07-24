@@ -85,10 +85,12 @@ function Layout({ children, nowPlaying }) {
     <>
       <NeonHeader nowPlaying={nowPlaying} />
       <main className="neon-main">{children}</main>
-   <footer className="neon-footer flex flex-col items-center justify-center gap-3 py-6">
+ <footer className="neon-footer flex flex-col items-center justify-center gap-4 py-6">
   <Link
     to="/"
-    className="pulsing-home text-cyan-300 font-bold text-lg tracking-wide border border-cyan-300 px-6 py-2 rounded-lg hover:bg-cyan-300 hover:text-black transition"
+    className="pulsing-home text-blue-300 font-bold text-2xl tracking-wide 
+               border-2 border-blue-400 px-8 py-3 rounded-xl 
+               hover:bg-blue-400 hover:text-black transition"
   >
     Home
   </Link>
@@ -97,6 +99,7 @@ function Layout({ children, nowPlaying }) {
     © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
   </p>
 </footer>
+
 
     </>
   );
