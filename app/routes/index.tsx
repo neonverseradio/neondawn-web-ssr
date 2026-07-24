@@ -64,7 +64,7 @@ export default function Index() {
 <a href="/lynney">
 {/* SPACING VERTICAL */}
 <div style={{ height: "20px" }}></div>
-  <button className="enter-button">Enter</button>
+  <button className="enter-button">L y n n e y</button>
 </a>
 
 <br />
