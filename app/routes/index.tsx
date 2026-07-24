@@ -101,7 +101,7 @@ export default function Index() {
       {/* SOCIAL LINKS */}
       <section className="social">
         <p className="social-text">
-          Check our official Instagram and Facebook for news and updates:
+          Check our official Instagram and for news and updates:
         </p>
 
         <p>
@@ -114,15 +114,6 @@ export default function Index() {
           </a>
         </p>
 
-        <p>
-          <a
-            href="https://www.facebook.com/NeonVerseRadio"
-            className="link"
-            target="_blank"
-          >
-            Facebook — NeonVerse Radio
-          </a>
-        </p>
       </section>
 
       {/* FOOTER TRANSMISSION */}
