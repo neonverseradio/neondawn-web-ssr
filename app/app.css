@@ -17,7 +17,13 @@ body {
 .neon-header {
     text-align: center;
     padding: 6px 0 10px;
+
+    /* baseline glow so flash animation is visible */
+    box-shadow: 0 0 12px rgba(120, 150, 255, 0.25);
+    filter: brightness(1.05);
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
+
 /* ==========================================================================
    GLOBAL PLAYER 
 ========================================================================== */
@@ -503,5 +509,31 @@ body {
 
 .pulsing-home {
   animation: homePulse 2.4s ease-in-out infinite;
+}
+/* ==========================================================================
+   HEADER FLASH ANIMATION
+========================================================================== */
+
+/* Strong Neon Header Flash */
+@keyframes headerFlash {
+  0% {
+    box-shadow: 0 0 12px rgba(120, 150, 255, 0.25);
+    filter: brightness(1.05);
+  }
+  50% {
+    box-shadow:
+      0 0 50px rgba(120, 150, 255, 1),
+      0 0 80px rgba(120, 150, 255, 0.8);
+    filter: brightness(1.6);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(120, 150, 255, 0.25);
+    filter: brightness(1.05);
+  }
+}
+
+.header-flash {
+  animation: headerFlash 0.7s ease-out;
+  animation-fill-mode: forwards;
 }
 
