@@ -86,14 +86,23 @@ function Layout({ children, nowPlaying }) {
       <NeonHeader nowPlaying={nowPlaying} />
       <main className="neon-main">{children}</main>
  <footer className="neon-footer flex flex-col items-center justify-center gap-4 py-6">
-  <Link
-    to="/"
-    className="pulsing-home text-blue-300 font-bold text-2xl tracking-wide 
-               border-2 border-blue-400 px-8 py-3 rounded-xl 
-               hover:bg-blue-400 hover:text-black transition"
-  >
-    Home
-  </Link>
+ <Link
+  to="/"
+  onClick={() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const header = document.querySelector(".neon-header");
+    if (header) {
+      header.classList.add("header-flash");
+      setTimeout(() => header.classList.remove("header-flash"), 600);
+    }
+  }}
+  className="pulsing-home text-blue-300 font-bold text-2xl tracking-wide 
+             border-2 border-blue-400 px-8 py-3 rounded-xl 
+             hover:bg-blue-400 hover:text-black transition"
+>
+  Home
+</Link>
 
   <p className="text-purple-300 text-sm">
     © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
