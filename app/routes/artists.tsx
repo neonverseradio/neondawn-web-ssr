@@ -122,20 +122,25 @@ export default function Artists() {
 
           <div className="flex flex-col items-center">
             <img src="/ilovemakkonen.png" alt="Ilovemakkonen" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
-            <br />
+            <br /><br />
 
             <img src="/ytc.png" alt="YTC" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg mt-4" />
             <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen / YTC</p>
           </div>
         </div>
 
-        <div className="mt-10 text-purple-300 leading-relaxed">
-          <p>A new breed of Future City transmission is coming on air.</p>
-          <p>Signal boosted.</p>
-          <p>Artists amplified.</p>
-          <p>Neon fully powered.</p>
-          <p className="mt-2 text-cyan-300 font-bold">Coming soon</p>
-        </div>
+       <div className="mt-10 text-purple-300 leading-relaxed">
+  <br /><br />
+  <p>A new breed of Future City transmission is coming on air.</p>
+  <p>Signal boosted.</p>
+  <p>Artists amplified.</p>
+  <p>Neon fully powered.</p>
+
+  <p className="mt-6 text-5xl font-black text-cyan-300 tracking-widest drop-shadow-[0_0_12px_rgba(0,255,255,0.8)]">
+    Coming Soon
+  </p>
+</div>
+
       </div>
 
     </main>
