@@ -165,16 +165,7 @@ export default function Index() {
     </a>
   </p>
 
-  <p>
-    <a
-      href="https://www.facebook.com/NeonVerseRadio"
-      className="link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Facebook — NeonVerse Radio
-    </a>
-  </p>
+ 
 </section>
 
       {/* FOOTER TRANSMISSION */}
