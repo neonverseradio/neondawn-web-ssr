@@ -420,6 +420,25 @@ body {
     font-size: 1rem;
     opacity: .75;
 }
+/* ==========================================================================
+   FOOTER OVERRIDE
+========================================================================== */
+/* Reset inherited footer styles */
+.footer-home-button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Reapply your intended neon button styling */
+.footer-home-button {
+  font-size: 2.5rem; /* H2 size */
+  font-weight: 800;
+  padding: 1.25rem 3rem;
+  border-radius: 1rem;
+  border: 4px solid rgba(120, 150, 255, 1);
+  color: rgb(120, 150, 255);
+}
 
 /* ==========================================================================
    GLOBAL FOOTER
