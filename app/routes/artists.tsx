@@ -129,17 +129,14 @@ export default function Artists() {
             <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen / YTC</p>
           </div>
         </div>
-
-       <div className="mt-10 text-purple-300 leading-relaxed">
-  <br /><br />
+<br /> <br />
+     <div className="transmission-block">
   <p>A new breed of Future City transmission is coming on air.</p>
   <p>Signal boosted.</p>
   <p>Artists amplified.</p>
   <p>Neon fully powered.</p>
-
-  <p className="mt-6 text-5xl font-black text-cyan-300 tracking-widest drop-shadow-[0_0_12px_rgba(0,255,255,0.8)]">
-    Coming Soon
-  </p>
+<br /> <br />
+  <p className="coming-soon">COMING SOON</p>
 </div>
 
       </div>
