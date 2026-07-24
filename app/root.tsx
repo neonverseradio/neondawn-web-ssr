@@ -124,9 +124,11 @@ function Layout({ children, nowPlaying }) {
                hover:bg-blue-400 hover:text-black transition cursor-pointer"
   >
     Home
+    <br />
   </Link>
 
   <p className="text-purple-300 text-lg font-semibold tracking-wide">
+    <br /><br />
     © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
   </p>
 </footer>

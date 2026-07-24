@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 export default function Index() {
   const [nowPlaying, setNowPlaying] = useState("Loading track info…");
 
@@ -49,124 +50,80 @@ export default function Index() {
     src="/artists/lynney/Lost.jpg"
     alt="Lynney — Artist of the Month"
    
-  /> <br></br><p>♪ Featured{" "}Artist ♪</p>
+  /> <br>
+  
+
+  </br><p>♪ Featured{" "}Artist ♪</p>
   <div className="aotm-frame">
   <img
     src="/artists/lynney/lynney1.jpg"
     alt="Lynney — Artist of the Month"
     className="aotm-img"
   />
-</div>
+</div><br />
+<a href="/lynney">
+{/* SPACING VERTICAL */}
+<div style={{ height: "20px" }}></div>
+  <button className="enter-button">Enter</button>
+</a>
+
+<br />
+<div style={{ height: "20px" }}></div>
+<img
+  src="/billboard.png"
+  alt="Lynney — Artist of the Month"
+  className="aotm-img"
+/>
 
 </section>
 
-      {/* LIVE PLAYER */}
-      <section className="player">
-        <h3 className="player-title">Live Stream</h3>
+     
 
-        <audio controls className="player-audio" id="neonAudio">
-          <source
-            src="https://a9.asurahosting.com/listen/neonverse/radio.mp3"
-            type="audio/mpeg"
-          />
-        </audio>
+      {/* OFFLINE LISTENING */}
+      <section className="offline">
+        <h3 className="offline-title">Listen on Apple and Android apps</h3>
 
-        <div className="player-meta">
-          <p>{nowPlaying}</p>
-        </div>
+        <p className="offline-desc">
+          NeonVerse Radio is available across multiple radio platforms.  
+          Tune in anywhere and experience The Sound of Future City.
+        </p>
+
+        <ul className="offline-list">
+          <li><a href="https://onlineradiobox.com" className="link">OnlineRadioBox</a></li>
+          <li><a href="https://streema.com" className="link">Streema</a></li>
+          <li><a href="https://canadaradiostations.com" className="link">CanadaRadioStations</a></li>
+          <li><a href="https://radoxo.com" className="link">Radoxo</a></li>
+          <li><a href="https://radiotune.fm" className="link">RadioTune.fm</a></li>
+          <li><a href="https://mytuner-radio.com" className="link">myTunerRadio</a></li>
+        </ul>
       </section>
 
-    {/* OFFLINE LISTENING */}
-<section className="offline">
-  <h3 className="offline-title">Listen on Apple and Android APPS</h3>
+      {/* SOCIAL LINKS */}
+      <section className="social">
+        <p className="social-text">
+          Check our official Instagram and Facebook for news and updates:
+        </p>
 
-  <p className="offline-desc">
-    NeonVerse Radio is available across multiple radio platforms.
-    Tune in anywhere and experience The Sound of Future City.
-  </p>
+        <p>
+          <a
+            href="https://www.instagram.com/neondawn.project/"
+            className="link"
+            target="_blank"
+          >
+            Instagram — Neon Dawn Project
+          </a>
+        </p>
 
-  <ul className="offline-list">
-    <li>
-      <a href="https://onlineradiobox.com" className="link">
-        OnlineRadioBox
-      </a>
-    </li>
-
-    <li>
-      <a href="https://streema.com" className="link">
-        Streema
-      </a>
-    </li>
-
-    <li>
-      <a href="https://canadaradiostations.com" className="link">
-        CanadaRadioStations
-      </a>
-    </li>
-
-    <li>
-      <a href="https://radoxo.com" className="link">
-        Radoxo
-      </a>
-    </li>
-
-    <li>
-      <a href="https://radiotune.fm" className="link">
-        RadioTune.fm
-      </a>
-    </li>
-
-    <li>
-      <a href="https://mytuner-radio.com" className="link">
-        myTunerRadio
-      </a>
-    </li>
-  </ul>
-</section>
-
-<h3>Neon Dawn — Audio Engineer, NeonVerse Radio</h3>
-
-<p>
-  Contact 1: <strong>neonverseradio@gmail.com</strong>
-</p>
-
-<p>
-  Contact 2: <strong>neondawn.project@gmail.com</strong>
-</p>
-
-<p className="lyric">
-  “Radio low, the sky feels wide.”
-  <br />
-  <span className="lyric-credit">© 2026 Neon Dawn</span>
-</p>
-
-<div style={{ marginTop: "40px", color: "#888", fontSize: "14px" }}>
-  © 2026 NeonVerse Radio – Toronto, Canada
-  <br />
-  Independent Online Radio Station
-  <br />
-  The Sound of Future City
-</div>
-
-{/* SOCIAL LINKS */}
-<section className="social">
-  <p className="social-text">
-    Check our official Instagram and Facebook for news and updates:
-  </p>
-
-  <p>
-    <a
-      href="https://www.instagram.com/neondawn.project/"
-      className="link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Instagram — Neon Dawn Project
-    </a>
-  </p>
-
- 
-</section>
+        <p>
+          <a
+            href="https://www.facebook.com/NeonVerseRadio"
+            className="link"
+            target="_blank"
+          >
+            Facebook — NeonVerse Radio
+          </a>
+        </p>
+      </section>
 
       {/* FOOTER TRANSMISSION */}
       <footer className="footer">

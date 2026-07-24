@@ -184,7 +184,136 @@
   box-shadow:
     0 0 30px #66ccff;
 }
+/* =====================================
+   ========= NEON REVIEW =============
+   ===================================== */
+.neon-review {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ff2efc;
+  text-shadow:
+    0 0 6px #ff2efc,
+    0 0 12px #ff2efc,
+    0 0 24px #ff2efc,
+    0 0 48px #ff2efc;
+  animation: neonPulse 4s ease-in-out infinite;
+}
 
+@keyframes neonPulse {
+  0% {
+    opacity: 0.7;
+    text-shadow:
+      0 0 4px #ff2efc,
+      0 0 8px #ff2efc,
+      0 0 16px #ff2efc;
+  }
+  50% {
+    opacity: 1;
+    text-shadow:
+      0 0 8px #ff2efc,
+      0 0 16px #ff2efc,
+      0 0 32px #ff2efc,
+      0 0 64px #ff2efc;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow:
+      0 0 4px #ff2efc,
+      0 0 8px #ff2efc,
+      0 0 16px #ff2efc;
+  }
+}
+/* =====================================
+   ========= NEON REVIEW SMALL =============
+   ===================================== */
+   .neon-review-small {
+  font-size: 1rem;               /* smaller, clean */
+  text-align: center;
+  color: #ff2efc;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  text-shadow:
+    0 0 3px #ff2efc,
+    0 0 6px #ff2efc,
+    0 0 12px #ff2efc;
+
+  animation: neonPulseSmall 4s ease-in-out infinite;
+}
+
+@keyframes neonPulseSmall {
+  0% {
+    opacity: 0.75;
+    text-shadow:
+      0 0 2px #ff2efc,
+      0 0 4px #ff2efc,
+      0 0 8px #ff2efc;
+  }
+  50% {
+    opacity: 1;
+    text-shadow:
+      0 0 4px #ff2efc,
+      0 0 8px #ff2efc,
+      0 0 16px #ff2efc;
+  }
+  100% {
+    opacity: 0.75;
+    text-shadow:
+      0 0 2px #ff2efc,
+      0 0 4px #ff2efc,
+      0 0 8px #ff2efc;
+  }
+}
+/* =====================================
+   ========= NEON REVIEW MINI with BORDER =============
+   ===================================== */
+  .neon-review-mini {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ff7a00;                 /* ORANGE TEXT */
+  font-weight: 600;
+  letter-spacing: 0.35px;
+
+  padding: 12px 18px;
+  margin: 20px auto;
+  display: inline-block;
+
+  border: 2px solid #ffea00;      /* YELLOW BORDER */
+  border-radius: 8px;
+
+  /* Yellow border glow */
+  box-shadow:
+    0 0 6px #ffea00,
+    0 0 12px #ffea00 inset;
+
+  /* Orange text glow */
+  text-shadow:
+    0 0 1px #ff7a00,
+    0 0 2px #ff7a00;
+
+  animation: neonPulseMini 4s ease-in-out infinite;
+}
+
+@keyframes neonPulseMini {
+  0%, 100% {
+    opacity: 0.85;
+    box-shadow:
+      0 0 4px #ffea00,
+      0 0 8px #ffea00 inset;
+    text-shadow:
+      0 0 1px #ff7a00,
+      0 0 2px #ff7a00;
+  }
+  50% {
+    opacity: 1;
+    box-shadow:
+      0 0 10px #ffea00,
+      0 0 20px #ffea00 inset;
+    text-shadow:
+      0 0 2px #ff7a00,
+      0 0 4px #ff7a00;
+  }
+}
 
 /* =====================================
    Phones
