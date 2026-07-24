@@ -1,0 +1,30 @@
+/* NeonVerse Transmission Block */
+
+.transmission-block {
+  margin-top: 2rem;
+  text-align: center;
+  color: #b084f7; /* purple-300 */
+  line-height: 1.8;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Standard lines */
+.transmission-block p {
+  margin: 0.4rem 0;
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* Neon-coded final line */
+.transmission-block .coming-soon {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #00fff2;
+  letter-spacing: 0.25em;
+
+  text-shadow:
+    0 0 6px rgba(0, 255, 255, 0.7),
+    0 0 12px rgba(0, 255, 255, 0.6),
+    0 0 24px rgba(0, 255, 255, 0.5);
+}
