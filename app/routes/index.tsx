@@ -1,30 +1,6 @@
 
 import { useEffect, useState } from "react";
 
-export default function Index() {
-  const [nowPlaying, setNowPlaying] = useState("Loading track info…");
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    async function getNowPlaying() {
-      try {
-        const response = await fetch(
-          "https://a9.asurahosting.com/api/nowplaying/neonverse",
-          { cache: "no-store" }
-        );
-
-        const { now_playing } = await response.json();
-        setNowPlaying(`${now_playing.song.artist} — ${now_playing.song.title}`);
-      } catch {
-        setNowPlaying("Live broadcast in progress");
-      }
-    }
-
-    getNowPlaying();
-    const interval = setInterval(getNowPlaying, 15000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <main className="page-body index-white">
