@@ -21,7 +21,8 @@ function NeonHeader({ nowPlaying }) {
       </div>
 
       <p className="broadcast">Offline Well be back tomorrow 6am est</p>
-      <h3>— the grid is powering up for the launch — </h3>
+      <h3>— Offline Well be back tomorrow 6am est
+ — </h3>
 
       {/* ---------------------------------------------------------
          GLOBAL AUDIO PLAYER (persistent across all pages)
