@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 
+import { useEffect, useState } from "react";
 
 export default function Index() {
   const [nowPlaying, setNowPlaying] = useState("Loading track info…");
@@ -39,49 +39,16 @@ export default function Index() {
       {/* HEADER */}
       <header className="header-block">
         <p className="title neon-h4">Radio Low The Sky Feels Wide</p>
-        <p className="subtitle">The Sound of Future City is activating…</p>
+        <p className="subtitle">Offline Well be back tomorrow 6am est</p>
       </header>
 
       {/* ARTIST OF THE MONTH */}
-     <section className="aotm">
-  <h2 className="aotm-title">Artist of the Month — LYNNEY</h2>
-    <p className="aotm-sub">♪► July ☼ ♪ Feature</p>
- <img
-    src="/artists/lynney/Lost.jpg"
-    alt="Lynney — Artist of the Month"
-   
-  /> <br>
-  
+ 
 
-  </br><p>♪ Featured{" "}Artist ♪</p>
-  <div className="aotm-frame">
-  <img
-    src="/artists/lynney/lynney1.jpg"
-    alt="Lynney — Artist of the Month"
-    className="aotm-img"
-  />
-</div><br />
-<a href="/lynney">
-{/* SPACING VERTICAL */}
-<div style={{ height: "20px" }}></div>
-  <button className="enter-button">L y n n e y</button>
-</a>
-
-<br />
-<div style={{ height: "20px" }}></div>
-<img
-  src="/billboard.png"
-  alt="Lynney — Artist of the Month"
-  className="aotm-img"
-/>
-
-</section>
-
-     
 
       {/* OFFLINE LISTENING */}
       <section className="offline">
-        <h3 className="offline-title">Listen on Apple and Android apps</h3>
+        <h3 className="offline-title">Listen While Offline</h3>
 
         <p className="offline-desc">
           NeonVerse Radio is available across multiple radio platforms.  
@@ -101,7 +68,7 @@ export default function Index() {
       {/* SOCIAL LINKS */}
       <section className="social">
         <p className="social-text">
-          Check our official Instagram and for news and updates:
+          Check our official Instagram and Facebook for news and updates:
         </p>
 
         <p>
@@ -113,7 +80,6 @@ export default function Index() {
             Instagram — Neon Dawn Project
           </a>
         </p>
-
       </section>
 
       {/* FOOTER TRANSMISSION */}
