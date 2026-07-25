@@ -20,7 +20,7 @@ function NeonHeader({ nowPlaying }) {
         <div className="bar"></div>
       </div>
 
-      <p className="broadcast">Neon broadcast initializing</p>
+      <p className="broadcast">Offline Well be back tomorrow 6am est</p>
       <h3>— the grid is powering up for the launch — </h3>
 
       {/* ---------------------------------------------------------
