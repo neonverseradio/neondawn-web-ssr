@@ -128,7 +128,11 @@ export default function Artists() {
             <img src="/ytc.png" alt="YTC" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg mt-4" />
             <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen / YTC</p>
           </div>
-        </div>
+          
+           <div className="flex flex-col items-center">
+            <img src="/keshon.png" alt="Keshon Campbell" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Keshon Campbell</p>
+          </div>
 <br /> <br />
      <div className="transmission-block">
   <p>A new breed of Future City transmission is coming on air.</p>
