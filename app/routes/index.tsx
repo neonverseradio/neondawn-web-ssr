@@ -1,182 +1,156 @@
-import { useEffect, useState } from "react";
+import "../seattle.css";
+{/* =========================== START OF SEATTLE ================================== */}
+export default function Lynney() {
+  const image =
+    "/artists/lynney/lynney1.jpg";
 
-export default function Index() {
-  const [nowPlaying, setNowPlaying] = useState("Loading track info…");
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    async function getNowPlaying() {
-      try {
-        const response = await fetch(
-          "https://a9.asurahosting.com/api/nowplaying/neonverse",
-          { cache: "no-store" }
-        );
-
-        const { now_playing } = await response.json();
-        setNowPlaying(`${now_playing.song.artist} — ${now_playing.song.title}`);
-      } catch {
-        setNowPlaying("Live broadcast in progress");
-      }
-    }
-
-    getNowPlaying();
-    const interval = setInterval(getNowPlaying, 15000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
-    <main className="page-body index-white">
-  {/* FOOTER TRANSMISSION */}
-      <footer className="footer">
-        <p>A new breed of Future City transmission is coming on air.</p>
-        <p>Signal boosted.</p>
-        <p>Artists amplified.</p>
-        <p>Neon fully powered.</p>
-        <p className="footer-coming">Coming soon</p>
-      </footer>
-      {/* HEADER */}
-      <header className="header-block">
-        <p className="title neon-h4">Radio Low The Sky Feels Wide</p>
-        <p className="subtitle">The Sound of Future City is activating…</p>
-      </header>
 
-      {/* ARTIST OF THE MONTH */}
-     <section className="aotm">
-  <h2 className="aotm-title">Artist of the Month — LYNNEY</h2>
-    <p className="aotm-sub">♪► July ☼ ♪ Feature</p>
- <img
-    src="/artists/lynney/Lost.jpg"
-    alt="Lynney — Artist of the Month"
-   
-  /> <br></br><p>♪ Featured{" "}Artist ♪</p>
-  <div className="aotm-frame">
-  <img
+    <main className="seattle-page">
+
+      <section className="seattle-panel">
+
+
+        <h1 className="seattle-title">
+          Seattle Signal
+        </h1>
+
+
+        <p className="seattle-tagline">
+          The Sound of Future City
+          <br />
+          Defining Neon Vibes. 24/7.
+        </p>
+
+
+        <p>
+          NeonVerse Radio – West Coast Transmission
+        </p>
+
+{/* START OF LYNNEY IMAGE */}
+
+        <img
     src="/artists/lynney/lynney1.jpg"
     alt="Lynney — Artist of the Month"
     className="aotm-img"
-  />
-</div>
+  /> 
+  <br /> <br />
+  <img
+    src="/artists/lynney/Lost.jpg"
+    alt="Lynney — Artist of the Month"
+   
+  /> 
+{/* END OF LYNNEY IMAGE */}
 
-</section>
+        <section className="seattle-content">
 
-      {/* LIVE PLAYER */}
-      <section className="player">
-        <h3 className="player-title">Live Stream</h3>
 
-        <audio controls className="player-audio" id="neonAudio">
-          <source
-            src="https://a9.asurahosting.com/listen/neonverse/radio.mp3"
-            type="audio/mpeg"
-          />
-        </audio>
+          <h2>
+            Artist of the Month — LYNNEY
+          </h2>
 
-        <div className="player-meta">
-          <p>{nowPlaying}</p>
-        </div>
+
+          <p>
+            Rain falls. Signals drift.
+            The city hums beneath neon reflections.
+          </p>
+
+          <p>
+            Welcome to the Seattle Signal —
+            a darker atmospheric channel of
+            NeonVerse Radio, broadcasting from
+            the shadow of the Space Needle and
+            the neon-washed streets of the
+            Pacific Northwest.
+          </p>
+
+
+          <p>
+            Expect deep synthwave, ambient
+            electronic textures, cinematic indie
+            sounds, and late-night drive energy
+            shaped by Seattle's skyline.
+          </p>
+
+{/* ============================ START OF LYNNEY REVIEW ============================================== */}
+           <img
+    src="/artists/lynney/lynney3.jpg"
+    alt="Lynney — Artist of the Month"
+     />   <br /> 
+    <img
+    src="/artists/lynney/lynney5.jpg"
+    alt="Lynney — Artist of the Month"
+     />  
+          
+          
+          <h2>
+            Lynney Transmission
+          </h2>
+
+
+          <p>
+            
+
+Lynney is a Glasgow‑born singer‑songwriter 
+blending synthwave nostalgia with raw emotional storytelling, 
+crafting music that feels intimate, cinematic, and neon‑lit.
+
+Her latest single “Lost” — written by Lynney Williamson and 
+shaped through Evolution’s vocal production - dives into 
+the darker side of synthwave with haunting melodies 
+and pulsing retro tension. An advocate for neurodivergent creatives, 
+she creates music that feels personal yet universal, 
+a glowing soundtrack for anyone navigating the dark with hope.
+ <br /> 
+          </p>
+<h2>
+ Out now: Lynney's songs are officially live on all streaming services! 
+</h2>
+<img
+    src="/artists/lynney/lynney4.jpg"
+    alt="Lynney — Artist of the Month"
+     /> 
+          <p>
+            Her single "Lost" explores the darker
+            side of synthwave with haunting
+            melodies and pulsing retro tension —
+            a midnight signal for anyone navigating
+            the shadows with hope.
+          </p>
+
+
+          <h2>
+            NeonVerse Review
+          </h2>
+
+{/* ============================ NEON CSS ============================================== */}
+         <h4 className="neon-review-mini">
+  "Lost" drifts into the NeonVerse like a midnight signal — subtle, tense, and emotionally charged.
+  <br />
+  A cinematic transmission built for late-night wanderers.
+</h4>
+
+
+
+
+        </section>
+
+
+        <a
+          href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
+          target="_blank"
+          rel="noreferrer"
+          className="seattle-button"
+        >
+          Enter Signal
+        </a>
+
+
       </section>
 
-    {/* OFFLINE LISTENING */}
-<section className="offline">
-  <h3 className="offline-title">Listen on Apple and Android APPS</h3>
-
-  <p className="offline-desc">
-    NeonVerse Radio is available across multiple radio platforms.
-    Tune in anywhere and experience The Sound of Future City.
-  </p>
-
-  <ul className="offline-list">
-    <li>
-      <a href="https://onlineradiobox.com" className="link">
-        OnlineRadioBox
-      </a>
-    </li>
-
-    <li>
-      <a href="https://streema.com" className="link">
-        Streema
-      </a>
-    </li>
-
-    <li>
-      <a href="https://canadaradiostations.com" className="link">
-        CanadaRadioStations
-      </a>
-    </li>
-
-    <li>
-      <a href="https://radoxo.com" className="link">
-        Radoxo
-      </a>
-    </li>
-
-    <li>
-      <a href="https://radiotune.fm" className="link">
-        RadioTune.fm
-      </a>
-    </li>
-
-    <li>
-      <a href="https://mytuner-radio.com" className="link">
-        myTunerRadio
-      </a>
-    </li>
-  </ul>
-</section>
-
-<h3>Neon Dawn — Audio Engineer, NeonVerse Radio</h3>
-
-<p>
-  Contact 1: <strong>neonverseradio@gmail.com</strong>
-</p>
-
-<p>
-  Contact 2: <strong>neondawn.project@gmail.com</strong>
-</p>
-
-<p className="lyric">
-  “Radio low, the sky feels wide.”
-  <br />
-  <span className="lyric-credit">© 2026 Neon Dawn</span>
-</p>
-
-<div style={{ marginTop: "40px", color: "#888", fontSize: "14px" }}>
-  © 2026 NeonVerse Radio – Toronto, Canada
-  <br />
-  Independent Online Radio Station
-  <br />
-  The Sound of Future City
-</div>
-
-{/* SOCIAL LINKS */}
-<section className="social">
-  <p className="social-text">
-    Check our official Instagram and Facebook for news and updates:
-  </p>
-
-  <p>
-    <a
-      href="https://www.instagram.com/neondawn.project/"
-      className="link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Instagram — Neon Dawn Project
-    </a>
-  </p>
-
- 
-</section>
-
-      {/* FOOTER TRANSMISSION */}
-      <footer className="footer">
-        <p>A new breed of Future City transmission is coming on air.</p>
-        <p>Signal boosted.</p>
-        <p>Artists amplified.</p>
-        <p>Neon fully powered.</p>
-        <p className="footer-coming">Coming soon</p>
-      </footer>
 
     </main>
+
   );
 }
