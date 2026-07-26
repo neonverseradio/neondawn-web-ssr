@@ -1,6 +1,30 @@
-
 import { useEffect, useState } from "react";
 
+
+export default function Index() {
+  const [nowPlaying, setNowPlaying] = useState("Loading track info…");
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    async function getNowPlaying() {
+      try {
+        const response = await fetch(
+          "https://a9.asurahosting.com/api/nowplaying/neonverse",
+          { cache: "no-store" }
+        );
+
+        const { now_playing } = await response.json();
+        setNowPlaying(`${now_playing.song.artist} — ${now_playing.song.title}`);
+      } catch {
+        setNowPlaying("Live broadcast in progress");
+      }
+    }
+
+    getNowPlaying();
+    const interval = setInterval(getNowPlaying, 15000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="page-body index-white">
@@ -15,16 +39,49 @@ import { useEffect, useState } from "react";
       {/* HEADER */}
       <header className="header-block">
         <p className="title neon-h4">Radio Low The Sky Feels Wide</p>
-        <p className="subtitle">Offline Well be back tomorrow 6am est</p>
+        <p className="subtitle">The Sound of Future City is activating…</p>
       </header>
 
       {/* ARTIST OF THE MONTH */}
- 
+     <section className="aotm">
+  <h2 className="aotm-title">Artist of the Month — LYNNEY</h2>
+    <p className="aotm-sub">♪► July ☼ ♪ Feature</p>
+ <img
+    src="/artists/lynney/Lost.jpg"
+    alt="Lynney — Artist of the Month"
+   
+  /> <br>
+  
 
+  </br><p>♪ Featured{" "}Artist ♪</p>
+  <div className="aotm-frame">
+  <img
+    src="/artists/lynney/lynney1.jpg"
+    alt="Lynney — Artist of the Month"
+    className="aotm-img"
+  />
+</div><br />
+<a href="/lynney">
+{/* SPACING VERTICAL */}
+<div style={{ height: "20px" }}></div>
+  <button className="enter-button">L y n n e y</button>
+</a>
+
+<br />
+<div style={{ height: "20px" }}></div>
+<img
+  src="/billboard.png"
+  alt="Lynney — Artist of the Month"
+  className="aotm-img"
+/>
+
+</section>
+
+     
 
       {/* OFFLINE LISTENING */}
       <section className="offline">
-        <h3 className="offline-title">Listen While Offline</h3>
+        <h3 className="offline-title">Listen on Apple and Android apps</h3>
 
         <p className="offline-desc">
           NeonVerse Radio is available across multiple radio platforms.  
@@ -44,7 +101,7 @@ import { useEffect, useState } from "react";
       {/* SOCIAL LINKS */}
       <section className="social">
         <p className="social-text">
-          Check our official Instagram and Facebook for news and updates:
+          Check our official Instagram and for news and updates:
         </p>
 
         <p>
@@ -56,6 +113,7 @@ import { useEffect, useState } from "react";
             Instagram — Neon Dawn Project
           </a>
         </p>
+
       </section>
 
       {/* FOOTER TRANSMISSION */}
