@@ -51,7 +51,16 @@ export default function Lynney() {
           <h2 className="enter-button">
    Artist of the Month - Lynney
 </h2>
+<br />
 
+<a
+          href="https://open.spotify.com/album/5cMqmbudEzhgFwgFdZlRfu"
+          target="_blank"
+          rel="noreferrer"
+          className="seattle-button"
+        >
+          Lost
+        </a>
 
           <p>
             Rain falls. Signals drift.
