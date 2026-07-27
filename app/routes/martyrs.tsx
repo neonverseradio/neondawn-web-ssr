@@ -59,7 +59,7 @@ const image =
           rel="noreferrer"
           className="seattle-button"
         >
-          Church Street EP
+          ♫ Church Street EP
         </a>
         {/* =========== CSS HORRIZONTAL SPACER ============== */}
 <span class="h-spacer"></span>
@@ -69,7 +69,7 @@ const image =
           rel="noreferrer"
           className="seattle-button"
         >
-          Twist the Cap 
+          ♫ Twist the Cap 
         </a>
          {/* =========== CSS HORRIZONTAL SPACER ============== */}
 <span class="h-spacer"></span>
@@ -79,7 +79,7 @@ const image =
           rel="noreferrer"
           className="seattle-button"
         >
-          Drowning Days 
+          ♫ Drowning Days 
         </a>
 <div class="v-space"></div>
 

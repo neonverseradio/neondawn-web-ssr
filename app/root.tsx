@@ -7,7 +7,9 @@ import { useState, useEffect } from "react";
 // -----------------------------------------------------------------------------
 function NeonHeader({ nowPlaying }) {
   return (
+   
     <header className="neon-header">
+       
       <h1 className="title">NeonVerse Radio</h1>
       <p className="subtitle">Toronto Indie Station</p>
       <p className="tagline">The Sound of Future City</p>
@@ -38,7 +40,8 @@ function NeonHeader({ nowPlaying }) {
           <p>{nowPlaying}</p>
         </div>
       </section>
-
+     
+<div class="nav-wrapper"> 
       {/* NAVIGATION */}
       <nav className="neon-nav">
         <Link to="/">Home</Link>
@@ -47,7 +50,8 @@ function NeonHeader({ nowPlaying }) {
         <Link to="/register">Register</Link>
         <Link to="/manifesto">Manifesto</Link>
         <Link to="submit">Submit Music</Link>
-      </nav>
+      </nav> 
+      </div>
     </header>
   );
 }
@@ -125,7 +129,8 @@ function Layout({ children, nowPlaying }) {
   >
     Home
   </Link>
-
+{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
+<div class="v-space"></div><br />
   <p className="text-purple-300 text-lg font-semibold tracking-wide">
     © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
   </p>

@@ -128,10 +128,11 @@ export default function Artists() {
 
           <div className="flex flex-col items-center">
             <img src="/ilovemakkonen.png" alt="Ilovemakkonen" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen</p>
             <br /><br />
 
             <img src="/ytc.png" alt="YTC" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg mt-4" />
-            <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen / YTC</p>
+            <p className="mt-2 text-xl text-cyan-300">Yellow Trash Can</p>
           </div>
 
  <div className="flex flex-col items-center">

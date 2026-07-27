@@ -176,14 +176,45 @@
 
   transition: 0.25s;
 }
-
-
 .seattle-button:hover {
   transform: scale(1.08);
 
   box-shadow:
     0 0 30px #66ccff;
 }
+/* =====================================
+   ========= SEATTLE BUTTON V2 =============
+   ===================================== */
+ .seattle-button2 {
+  display: inline-block;
+
+  width: auto;
+  max-width: 100%;
+
+  margin-top: 30px;
+  padding: 15px 40px;
+
+  background: #66ccff;
+  color: #050814;
+
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+
+  border: 2px solid rgba(102, 204, 255, 0.9); /* neon border */
+  box-shadow: 0 0 12px rgba(102, 204, 255, 0.7); /* glow */
+
+  transition: 0.25s;
+}
+
+.seattle-button2:hover {
+  box-shadow: 0 0 22px rgba(102, 204, 255, 1); /* stronger glow */
+  transform: translateY(-2px);
+}
+
+
+  
+   
 /* =====================================
    ========= NEON REVIEW =============
    ===================================== */

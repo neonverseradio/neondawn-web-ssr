@@ -30,4 +30,9 @@ export const ARTISTS: ArtistMeta[] = [
     slug: "ytc-ilovemakonnen",
     img: "/artists/ytc-ilovemakonnen/ytc1.jpg",
   },
+  {
+    name: "Kenshon",
+    slug: "keshon",
+    img: "/artists/keshon/keshon.jpg",
+  },
 ];
