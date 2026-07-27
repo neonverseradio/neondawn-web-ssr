@@ -15,4 +15,7 @@ export default [
 
     // Meeka artist page
      route("martyrs", "routes/martyrs.tsx"),
+
+      // SUBMIT artist page
+     route("submit", "routes/submit.tsx"),
 ] satisfies RouteConfig;

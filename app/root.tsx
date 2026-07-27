@@ -46,7 +46,7 @@ function NeonHeader({ nowPlaying }) {
         <Link to="/monthly-vibes">Monthly Vibes</Link>
         <Link to="/register">Register</Link>
         <Link to="/manifesto">Manifesto</Link>
-        <Link to="/testneon1">NeonTest1</Link>
+        <Link to="submit">Submit Music</Link>
       </nav>
     </header>
   );
@@ -130,8 +130,7 @@ function Layout({ children, nowPlaying }) {
     © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
   </p>
 </footer>
-
-
+ 
     </>
   );
 }
