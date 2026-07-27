@@ -105,10 +105,15 @@ export default function Artists() {
           Neonverse Upcoming Artist
         </h2>
 
-        <div className="flex flex-col items-center gap-8">
+                <div className="flex flex-col items-center gap-8">
           <div className="flex flex-col items-center">
             <img src="/martyrs.png" alt="Martyrs" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
             <p className="mt-2 text-xl text-cyan-300">Martyrs</p>
+          </div>
+          
+           <div className="flex flex-col items-center">
+            <img src="/lynney1.jpg" alt="Lynney" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Lynney</p>
           </div>
 
           <div className="flex flex-col items-center">

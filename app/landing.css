@@ -33,3 +33,9 @@
 
   animation: neonPulse 2.4s ease-in-out infinite;
 }
+/* =====================================
+   A REUSABLE VERTICAL SPACE
+   ===================================== */
+   .v-space {
+  height: 40px;   /* fixed vertical space */
+}

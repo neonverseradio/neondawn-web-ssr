@@ -539,14 +539,6 @@ body {
 /* ==========================================================================
    BUTTON ENTER HOVER COLORS
 ========================================================================== */
-.enter-button:hover {
-  transform: scale(1.08);
-  box-shadow:
-    0 0 20px #ff00ff,
-    0 0 40px #ffff00,
-    0 0 60px #00ff00,
-    0 0 80px #00ffff;
-}
 .enter-button {
   font-size: 1.1rem;
   font-weight: 700;
@@ -557,20 +549,36 @@ body {
   padding: 12px 28px;
   text-align: center;
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
   box-shadow:
     0 0 10px #ff00ff,
     0 0 20px #ff00ff,
     0 0 30px #ff00ff;
+
   text-shadow:
     0 0 5px #ff00ff,
     0 0 10px #ff00ff,
     0 0 20px #ff00ff;
+
   animation: colorCycle 6s linear infinite;
   transition: transform 0.2s ease-in-out;
 }
 
 .enter-button:hover {
   transform: scale(1.08);
+  text-decoration: none;
+  box-shadow:
+    0 0 20px #ff00ff,
+    0 0 40px #ffff00,
+    0 0 60px #00ff00,
+    0 0 80px #00ffff;
+}
+
+.enter-button:visited,
+.enter-button:active {
+  text-decoration: none;
 }
 
 @keyframes colorCycle {
@@ -604,4 +612,18 @@ body {
     box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
     text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
   }
+}
+/* =====================================
+   A REUSABLE VERTICAL SPACE
+   ===================================== */
+   .v-space {
+  height: 40px;   /* fixed vertical space */
+}
+/* =====================================
+   A REUSABLE HORIZONTAL SPACE
+   ===================================== */
+
+.h-spacer {
+  display: inline-block;
+  width: 1.5rem; /* adjust for desired gap */
 }

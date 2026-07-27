@@ -1,4 +1,6 @@
 import "../seattle.css";
+import "../app.css";
+
 {/* =========================== START OF SEATTLE ================================== */}
 export default function Lynney() {
   const image =
@@ -46,10 +48,20 @@ export default function Lynney() {
         <section className="seattle-content">
 
 
-          <h2>
-            Artist of the Month — LYNNEY
-          </h2>
+          <h2 className="enter-button">
+   Artist of the Month - Lynney
+</h2>
+<br />
 
+<a
+          href="https://open.spotify.com/album/5cMqmbudEzhgFwgFdZlRfu"
+          target="_blank"
+          rel="noreferrer"
+          className="seattle-button"
+        >
+          Lost
+        </a>
+<div class="v-space"></div>
 
           <p>
             Rain falls. Signals drift.
@@ -82,9 +94,8 @@ export default function Lynney() {
     src="/artists/lynney/lynney5.jpg"
     alt="Lynney — Artist of the Month"
      />  
-          
-          
-          <h2>
+                  
+          <h2 className="enter-button">
             Lynney Transmission
           </h2>
 
@@ -138,13 +149,14 @@ a glowing soundtrack for anyone navigating the dark with hope.
 
 
         <a
-          href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
-          target="_blank"
-          rel="noreferrer"
-          className="seattle-button"
-        >
-          Enter Signal
-        </a>
+  href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
+  target="_blank"
+  rel="noreferrer"
+  className="enter-button"
+>
+  Enter Signal
+</a>
+
 
 
       </section>

@@ -9,4 +9,10 @@ export default [
 
   // Lynney artist page
   route("lynney", "routes/lynney.tsx"),
+
+  // Meeka artist page
+  route("meeka", "routes/meeka.tsx"),
+
+    // Meeka artist page
+     route("martyrs", "routes/martyrs.tsx"),
 ] satisfies RouteConfig;

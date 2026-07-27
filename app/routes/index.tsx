@@ -1,4 +1,6 @@
 import "../seattle.css";
+import "../app.css";
+
 {/* =========================== START OF SEATTLE ================================== */}
 export default function Lynney() {
   const image =
@@ -46,9 +48,9 @@ export default function Lynney() {
         <section className="seattle-content">
 
 
-          <h2>
-            Artist of the Month — LYNNEY
-          </h2>
+          <h2 className="enter-button">
+   Artist of the Month - Lynney
+</h2>
 
 
           <p>
@@ -84,9 +86,9 @@ export default function Lynney() {
      />  
           
           
-          <h2>
-            Lynney Transmission
-          </h2>
+           <h2 className="enter-button">
+   Lynney Transmission
+</h2>
 
 
           <p>
@@ -138,13 +140,16 @@ a glowing soundtrack for anyone navigating the dark with hope.
 
 
         <a
-          href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
-          target="_blank"
-          rel="noreferrer"
-          className="seattle-button"
-        >
-          Enter Signal
-        </a>
+        
+  href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
+  target="_blank"
+  rel="noreferrer"
+  className="enter-button"
+  style={{ fontSize: "1.8rem" }}
+>
+  Enter Signal
+</a>
+
 
 
       </section>

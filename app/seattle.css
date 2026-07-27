@@ -378,3 +378,17 @@
   }
 
 }
+/* =====================================
+   A REUSABLE VERTICAL SPACE
+   ===================================== */
+   .v-space {
+  height: 40px;   /* fixed vertical space */
+}
+/* =====================================
+   A REUSABLE HORIZONTAL SPACE
+   ===================================== */
+
+.h-spacer {
+  display: inline-block;
+  width: 1.5rem; /* adjust for desired gap */
+}
