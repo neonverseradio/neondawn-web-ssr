@@ -54,7 +54,7 @@ const image =
    Meeka
 </h2><br />
  <a
-          href="https://open.spotify.com/search/dissociate"
+          href="https://open.spotify.com/artist/1NIl8MX7BW7Cs8Z8cZsL2O"
           target="_blank"
           rel="noreferrer"
           className="seattle-button"
