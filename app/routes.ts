@@ -16,6 +16,20 @@ export default [
     // Meeka artist page
      route("martyrs", "routes/martyrs.tsx"),
 
+      // Makonnen artist page
+     route("mak", "routes/mak.tsx"),
+
+      // Karl artist page
+     route("karl", "routes/karl.tsx"),
+
+      // Keshon artist page
+     route("keshon", "routes/keshon.tsx"),
+
+      // YTC artist page
+     route("ytc", "routes/ytc.tsx"),
+
       // SUBMIT artist page
      route("submit", "routes/submit.tsx"),
+
+
 ] satisfies RouteConfig;

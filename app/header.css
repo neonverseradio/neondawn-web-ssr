@@ -1,0 +1,168 @@
+/* ==========================================================
+   NEONVERSE HEADER ARTIST CONVEYOR
+========================================================== */
+
+.artist-scroller-wrapper{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding:20px 0;
+    border-top:2px solid rgba(0,255,255,.25);
+    border-bottom:2px solid rgba(0,255,255,.15);
+}
+
+/* Moving conveyor */
+
+.artist-scroller{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    width:max-content;
+    animation:artistScroll 22s linear infinite;
+}
+
+/* Pause while hovering */
+
+.artist-scroller:hover{
+    animation-play-state:paused;
+}
+
+/* Individual Artist */
+
+.artist-item{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    flex-shrink:0;
+}
+
+/* Artist image */
+
+.artist-tile{
+
+    width:90px;
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:2px solid rgba(0,255,255,.35);
+
+    transition:
+        transform .35s,
+        box-shadow .35s,
+        border-color .35s;
+
+}
+
+/* Hover */
+
+.artist-item:hover .artist-tile{
+
+    transform:scale(1.5);
+
+    border-color:#00ffff;
+
+    z-index:20;
+
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 35px #00ffff,
+        0 0 55px #00ffff;
+
+}
+
+/* Caption Overlay */
+
+.artist-caption{
+
+    position:absolute;
+
+    bottom:-34px;
+
+    left:50%;
+
+    transform:translateX(-50%) translateY(10px);
+
+    background:rgba(0,0,0,.82);
+
+    color:#00ffff;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(0,255,255,.45);
+
+    font-size:.82rem;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    white-space:nowrap;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.30s;
+
+    text-shadow:0 0 8px cyan;
+
+}
+
+/* Show caption */
+
+.artist-item:hover .artist-caption{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+/* Conveyor Animation */
+
+@keyframes artistScroll{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.artist-scroller{
+
+    gap:25px;
+
+    animation-duration:18s;
+
+}
+
+.artist-tile{
+
+    width:70px;
+    height:70px;
+
+}
+
+.artist-item:hover .artist-tile{
+
+    transform:scale(1.35);
+
+}
+
+}

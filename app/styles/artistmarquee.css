@@ -1,0 +1,281 @@
+/* ==========================================================
+   NEONVERSE ARTIST MARQUEE
+   ========================================================== */
+
+
+/* ==========================================================
+   MAIN WRAPPER
+   ========================================================== */
+
+.artist-marquee{
+
+    width:100%;
+
+    overflow:hidden;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.12);
+
+    border-top:1px solid rgba(0,255,255,.20);
+
+    border-bottom:1px solid rgba(0,255,255,.20);
+
+    padding:16px 0;
+
+}
+
+
+/* ==========================================================
+   MOVING TRACK
+   Change animation speed here.
+   Higher number = slower.
+   45s = nice
+   60s = very slow
+   ========================================================== */
+
+.artist-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-shrink:0;
+
+    min-width:100%;
+
+    animation:marquee 55s linear infinite;
+
+}
+
+
+/* Pause conveyor while hovering */
+
+.artist-marquee:hover .artist-track{
+
+    animation-play-state:paused;
+
+}
+
+
+/* ==========================================================
+   ARTIST LINK
+   Adjust spacing around each artist here.
+   ========================================================== */
+
+.artist-item{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    flex-shrink:0;
+
+    padding:10px;
+
+}
+
+
+/* ==========================================================
+   IMAGE
+   Change image size here.
+   ========================================================== */
+
+.artist-image{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    border:2px solid rgba(0,255,255,.35);
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease;
+
+}
+
+
+/* ==========================================================
+   IMAGE HOVER EFFECT
+   Change glow and enlargement here.
+   ========================================================== */
+
+.artist-item:hover .artist-image{
+
+    transform:
+        translateY(-8px)
+        scale(1.45);
+
+    border-color:#00ffff;
+
+    box-shadow:
+        0 0 12px cyan,
+        0 0 22px cyan,
+        0 0 36px cyan,
+        0 0 60px cyan;
+
+}
+
+
+/* ==========================================================
+   CAPTION
+   Change caption appearance here.
+   ========================================================== */
+
+.artist-caption{
+
+    position:absolute;
+
+    bottom:18px;
+
+    left:50%;
+
+    transform:
+        translate(-50%,10px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:80px;
+
+    padding:6px 10px;
+
+    border-radius:18px;
+
+    background:rgba(0,0,0,.70);
+
+    backdrop-filter:blur(6px);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+}
+
+
+/* ==========================================================
+   CAPTION TITLE
+   ========================================================== */
+
+.artist-caption strong{
+
+    color:#ffffff;
+
+    font-size:.80rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+
+/* ==========================================================
+   CAPTION DESCRIPTION
+   ========================================================== */
+
+.artist-caption span{
+
+    color:#00ffff;
+
+    font-size:.70rem;
+
+    margin-top:2px;
+
+}
+
+
+/* ==========================================================
+   SHOW CAPTION
+   Appears together with image.
+   ========================================================== */
+
+.artist-item:hover .artist-caption{
+
+    opacity:1;
+
+    transform:
+        translate(-50%,0);
+
+}
+
+
+/* ==========================================================
+   CONVEYOR ANIMATION
+   ========================================================== */
+
+@keyframes marquee{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-100%);
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width:768px){
+
+.artist-track{
+
+    gap:20px;
+
+    animation-duration:35s;
+
+}
+
+.artist-image{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+.artist-item:hover .artist-image{
+
+    transform:
+        translateY(-5px)
+        scale(1.30);
+
+}
+
+}

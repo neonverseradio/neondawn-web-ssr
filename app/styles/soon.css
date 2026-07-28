@@ -1,0 +1,285 @@
+/* ==========================================================
+   NEONVERSE RADIO
+   AOTM - COMING SOON
+========================================================== */
+
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.soon-page{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:50px 20px;
+
+    background:
+        radial-gradient(circle at top,#0d2530 0%,#05070b 65%);
+
+}
+
+
+/* ==========================================================
+   MAIN FRAME
+========================================================== */
+
+.signal-frame{
+
+    width:100%;
+
+    max-width:900px;
+
+    padding:45px;
+
+    border:1px solid rgba(0,255,255,.25);
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+
+        0 0 20px rgba(0,255,255,.15),
+
+        inset 0 0 20px rgba(0,255,255,.05);
+
+}
+
+
+/* ==========================================================
+   TITLES
+========================================================== */
+
+.station-title{
+
+    color:#00ffff;
+
+    text-align:center;
+
+    letter-spacing:8px;
+
+    font-size:2.8rem;
+
+    text-shadow:
+
+        0 0 10px cyan,
+
+        0 0 25px cyan;
+
+}
+
+
+.station-subtitle{
+
+    color:#8cf7ff;
+
+    text-align:center;
+
+    margin-top:10px;
+
+    letter-spacing:4px;
+
+    font-weight:400;
+
+}
+
+
+.aotm-title{
+
+    margin-top:35px;
+
+    color:white;
+
+    letter-spacing:3px;
+
+}
+
+
+.encrypted{
+
+    color:#00ffff;
+
+    margin-top:10px;
+
+    letter-spacing:2px;
+
+}
+
+
+.log-title{
+
+    color:#00ffff;
+
+    letter-spacing:2px;
+
+}
+
+
+.stay-tuned{
+
+    text-align:center;
+
+    color:#00ffff;
+
+    letter-spacing:6px;
+
+    margin-top:20px;
+
+    text-shadow:
+
+        0 0 12px cyan;
+
+}
+
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.divider{
+
+    margin:35px 0;
+
+    border-top:1px solid rgba(0,255,255,.25);
+
+}
+
+
+/* ==========================================================
+   PARAGRAPHS
+========================================================== */
+
+.signal-frame p{
+
+    color:#d8ffff;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   TERMINAL WINDOW
+========================================================== */
+
+.terminal{
+
+    margin:30px 0;
+
+    padding:22px;
+
+    border-radius:8px;
+
+    border:1px solid rgba(0,255,255,.25);
+
+    background:#07131b;
+
+    color:#00ffff;
+
+    font-family:Consolas,monospace;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+    overflow-x:auto;
+
+    box-shadow:
+
+        inset 0 0 18px rgba(0,255,255,.05);
+
+}
+
+
+/* ==========================================================
+   TRANSMISSION LOG
+========================================================== */
+
+.log{
+
+    color:#93ffff;
+
+}
+
+
+/* ==========================================================
+   MESSAGE
+========================================================== */
+
+.message{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer-block{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    color:#6eeeff;
+
+    letter-spacing:2px;
+
+    opacity:.8;
+
+}
+
+
+.footer-block p{
+
+    margin:8px 0;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+.signal-frame{
+
+    padding:28px;
+
+}
+
+.station-title{
+
+    font-size:2rem;
+
+    letter-spacing:4px;
+
+}
+
+.station-subtitle{
+
+    font-size:1rem;
+
+}
+
+.terminal{
+
+    font-size:.82rem;
+
+}
+
+}

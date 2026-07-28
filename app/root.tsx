@@ -1,6 +1,7 @@
 import "./app.css";
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
+import ArtistMarquee from "./components/artistmarquee";
 
 // -----------------------------------------------------------------------------
 // GLOBAL NEON HEADER
@@ -52,6 +53,13 @@ function NeonHeader({ nowPlaying }) {
         <Link to="submit">Submit Music</Link>
       </nav> 
       </div>
+{/* ---------------------------------------------------------
+         START OF MARQUEE HEADER 
+      ---------------------------------------------------------- */}
+             <ArtistMarquee />
+      {/* ---------------------------------------------------------
+         END OF MARQUEE HEADER
+      ---------------------------------------------------------- */}
     </header>
   );
 }
