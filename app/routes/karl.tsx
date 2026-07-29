@@ -1,110 +1,183 @@
+
+import { Link } from "react-router";
 import "../seattle.css";
 import "../app.css";
-import "../styles/soon.css";
 
-export default function AOTM() {
+{/* =========================== START OF THE JSX BODY ================================== */}
+export default function Meeka() {     
+const image =
+    "/artists/lynney/meeka1.jpg";
+
+
   return (
-    <main className="soon-page">
 
-      <div className="signal-frame">
+    <main className="seattle-page">
 
-        <h1 className="station-title">
-          NEONVERSE RADIO
+      <section className="seattle-panel">
+
+
+        <h1 className="seattle-title">
+          Karl WBA
         </h1>
 
-        <h2 className="station-subtitle">
-           Karl - White Bat Audio
-        </h2>
 
-        <div className="divider"></div>
+        <p className="seattle-tagline">
+          The Sound of Future City
+          <br />
+          Defining Neon Vibes. 24/7.
+        </p>
 
-        <h3 className="aotm-title">
-          ⒶⓇⓉⒾⓈⓉ ⓄⒻ ⓉⒽⒺ ⓂⓄⓃⓉⒽ
-        </h3>
-
-        <h3 className="encrypted">
-          TRANSMISSION ENCRYPTED
-                  </h3>
-                   <h1 className="seattle-title">
-          COMING SOON
-        </h1>
 
         <p>
-          Incoming signal detected...
+          NeonVerse Radio – West Coast Transmission
         </p>
 
-        <p>
-          Public access level confirmed.
-        </p>
+{/* START OF LYNNEY IMAGE */}
 
-        <pre className="terminal">
-{`████████████████████████████████████████
+        <img
+    src="/artists/karl/wba1.jpg"
+    alt="Karl — Artist of the Month"
+    className="aotm-img"
+  /> 
+  <br /> <br />
+  <img
+    src="/artists/karl/karl.png"
+    alt="karl — Artist of the Month"
+   
+  /> 
+{/* END OF LYNNEY IMAGE */}
 
- SIGNAL STATUS ...... ONLINE
- FREQUENCY .......... NVR-01
- TRANSMISSION ....... ACTIVE
- AOTM FILE .......... CLASSIFIED
- DECRYPTION ......... 32%
- ACCESS LEVEL ....... PUBLIC
+        <section className="seattle-content">
 
-████████████████████████████████████████`}
-        </pre>
 
-        <p>
-          The next <strong>NeonVerse Artist of the Month</strong> has
-          already been selected.
-        </p>
+          <h2 className="enter-button">
+   Karl - WBA
+</h2><br />
+ <a
+          href="https://www.youtube.com/watch?v=NZ4Of3lID84&list=RDNZ4Of3lID84&start_radio=1"
+          target="_blank"
+          rel="noreferrer"
+          className="seattle-button"
+        >
+          ♫ Hacker
+        </a>
+<div class="v-space"></div>
 
-        <p>
-          The identity remains encrypted until the official broadcast.
-        </p>
+          <p>
+            Rain falls. Signals drift.
+            The city hums beneath neon reflections.
+          </p>
 
-        <div className="divider"></div>
+          <p>
+            Welcome to the Seattle Signal —
+            a darker atmospheric channel of
+            NeonVerse Radio, broadcasting from
+            the shadow of the Space Needle and
+            the neon-washed streets of the
+            Pacific Northwest.
+          </p>
 
-        <h3 className="log-title">
-          TRANSMISSION LOG
-        </h3>
 
-        <pre className="terminal log">
-{`> Scanning local frequencies...
+          <p>
+            Expect deep synthwave, ambient
+            electronic textures, cinematic indie
+            sounds, and late-night drive energy
+            shaped by Seattle's skyline.
+          </p>
 
-> Connecting to Future City Network...
+{/* ============================ START OF LYNNEY REVIEW ============================================== */}
+           <img
+    src="/artists/karl/wba2.jpg"
+    alt="Karl — Artist of the Month"
+     />   <br /> 
+    <img
+    src="/artists/karl/wba5.png"
+    alt="Karl — Artist of the Month"
+     />  
+          
+          
+           <h2 className="enter-button">
+   COMING SOON - Karl - WBA
+</h2>
 
-> Synchronizing broadcast...
 
-> Artist profile located...
+          <p>
+            
 
-> SECURITY LOCK ENABLED
+This month, we feature Karl <br />
+Karl Casey — the mind behind White Bat Audio — stands as one of the most influential forces in modern synthwave. 
+For over 15 years, he’s carved out a sonic universe where retro horror, sci‑fi atmospheres, 
+and cyberpunk tension collide with razor‑sharp production and unmistakable guitar-driven energy. 
+His work has become a staple for creators, filmmakers, game developers, and synthwave fans worldwide.
+ <br /> 
+          </p>
+<h2>
+ Out now: Karl's songs are officially live on all streaming services! 
+</h2>
+<img
+    src="/artists/karl/wba4.jpg"
+    alt="Karl — Artist of the Month"
+     /> 
+          <p>
+            Karl’s catalog is a masterclass in mood-building. 
+            His tracks move like scenes from neon‑lit thrillers — pulsing basslines, dystopian pads, 
+            and riffs that feel pulled straight from forgotten VHS nightmares. 
+            Whether it’s retro horror, sci‑fi ambience, or dark cyberpunk synthwave, 
+            Karl’s music doesn’t just accompany visuals — it creates them.
+<br />
+    Cinematic synthwave — atmospheric, brooding, immersive
 
-> Awaiting authorization...
+    Thrash/death metal riffs — aggressive, high‑octane, unmistakably Karl
 
-> Awaiting official release...
-`}
-        </pre>
+    Hybrid soundtracks — perfect for creators who need tension, adrenaline, or retro futurism
 
-        <div className="divider"></div>
 
-        <h2 className="stay-tuned">
-          STAY TUNED
-        </h2>
+<br />
+          </p>
 
-        <p className="message">
-          This transmission will automatically unlock once the next
-          Artist of the Month has been officially revealed.
-        </p>
 
-        <div className="footer-block">
+          <h2>
+            NeonVerse Review
+          </h2>
 
-          <p>NEONVERSE RADIO</p>
+{/* ============================ NEON CSS ============================================== */}
+         <h4 className="neon-review-mini">
+  Karl Casey is a veteran producer and guitarist with over 15 years of experience, 
+  known for shaping the dark‑synth, retro‑horror, 
+  and cyberpunk sound under his project White Bat Audio. 
+  <br />
+  He blends cinematic synthwave with thrash‑infused riffs, 
+  creating atmospheric music that’s become a go‑to soundtrack for creators, 
+  filmmakers, and game developers.
+</h4>
 
-          <p>TORONTO • CANADA</p>
 
-          <p>THE SOUND OF FUTURE CITY</p>
 
-        </div>
 
-      </div>
+        </section>
+{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
+<div class="v-space"></div>
+
+
+        <a
+       
+  href="https://whitebataudio.com/"
+  target="_blank"
+  rel="noreferrer"
+  className="enter-button"
+  style={{ fontSize: "1.8rem" }}
+>
+  Enter Signal
+</a>
+
+
+
+      </section>
+{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
+<br />
+<div class="v-space"></div>
 
     </main>
+
   );
 }

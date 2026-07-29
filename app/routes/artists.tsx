@@ -17,7 +17,7 @@ export default function Artists() {
   }, [query]);
 
   const previewArtist = useMemo(() => {
-    if (query.trim().length < 4) return null;
+    if (query.trim().length < 3) return null;
 
     return ARTISTS.find((artist) =>
       artist.name.toLowerCase().includes(query.trim().toLowerCase())
@@ -127,7 +127,7 @@ export default function Artists() {
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="/ilovemakkonen.png" alt="Ilovemakkonen" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <img src="/ilovemakonnen.png" alt="Ilovemakkonen" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
             <p className="mt-2 text-xl text-cyan-300">Ilovemakkonen</p>
             <br /><br />
 

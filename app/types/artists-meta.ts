@@ -26,14 +26,14 @@ export const ARTISTS: ArtistMeta[] = [
     img: "/artists/karl/karl.png",
   },
   {
-    name: "YTC & Ilovemakonnen",
+    name: "YTC",
     slug: "ytc",
     img: "/artists/ytc/ytc.png",
   },
   {
-    name: "Kenshon",
+    name: "Keshon",
     slug: "keshon",
-    img: "/artists/keshon/keshon.jpg",
+    img: "/artists/keshon/keshon.png",
   },
    {
     name: "Ilovemakonnen",

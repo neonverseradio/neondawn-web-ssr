@@ -72,7 +72,26 @@
 
   overflow-wrap: break-word;
 }
+/* SEATTLE TITLE2 */
+.seattle-title2 {
+  margin-top: 0;
 
+  font-size: clamp(22px, 5vw, 42px); /* smaller overall */
+  line-height: 1.05;
+
+  letter-spacing: clamp(0.06em, 1.2vw, 0.14em); /* tighter spacing */
+
+  text-transform: uppercase;
+
+  color: #66e0ff; /* brighter neon cyan */
+
+  text-shadow:
+    0 0 10px #66e0ff,
+    0 0 25px #33bbff,
+    0 0 45px #0088ff; /* sharper glow, less blur */
+
+  overflow-wrap: break-word;
+}
 
 /* Tagline */
 
