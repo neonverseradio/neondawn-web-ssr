@@ -63,12 +63,12 @@ const image =
         </a>
 <div class="v-space"></div>
 
-          <p>
+         <p className="seattle-tagline">
             Rain falls. Signals drift.
             The city hums beneath neon reflections.
           </p>
 
-          <p>
+         <p className="seattle-tagline">
             Welcome to the Seattle Signal —
             a darker atmospheric channel of
             NeonVerse Radio, broadcasting from
@@ -78,7 +78,7 @@ const image =
           </p>
 
 
-          <p>
+          <p className="seattle-tagline">
             Expect deep synthwave, ambient
             electronic textures, cinematic indie
             sounds, and late-night drive energy

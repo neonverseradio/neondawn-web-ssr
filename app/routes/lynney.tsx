@@ -15,7 +15,7 @@ export default function Lynney() {
 
 
         <h1 className="seattle-title">
-          Seattle Signal
+          Lynney
         </h1>
 
 
@@ -63,12 +63,12 @@ export default function Lynney() {
         </a>
 <div class="v-space"></div>
 
-          <p>
+          <p className="seattle-tagline">
             Rain falls. Signals drift.
             The city hums beneath neon reflections.
           </p>
 
-          <p>
+          <p className="seattle-tagline">
             Welcome to the Seattle Signal —
             a darker atmospheric channel of
             NeonVerse Radio, broadcasting from
@@ -78,7 +78,7 @@ export default function Lynney() {
           </p>
 
 
-          <p>
+          <p className="seattle-tagline">
             Expect deep synthwave, ambient
             electronic textures, cinematic indie
             sounds, and late-night drive energy
