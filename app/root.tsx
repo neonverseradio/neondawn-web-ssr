@@ -1,16 +1,12 @@
 import "./app.css";
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
-import { useState, useEffect } from "react";
-import ArtistMarquee from "./components/artistmarquee";
 
 // -----------------------------------------------------------------------------
 // GLOBAL NEON HEADER
 // -----------------------------------------------------------------------------
-function NeonHeader({ nowPlaying }) {
+function NeonHeader() {
   return (
-   
     <header className="neon-header">
-       
       <h1 className="title">NeonVerse Radio</h1>
       <p className="subtitle">Toronto Indie Station</p>
       <p className="tagline">The Sound of Future City</p>
@@ -23,43 +19,16 @@ function NeonHeader({ nowPlaying }) {
         <div className="bar"></div>
       </div>
 
-      <p className="broadcast">Neon broadcast initializing</p>
-      <h3>— the grid is powering up for the launch — </h3>
-
-      {/* ---------------------------------------------------------
-         GLOBAL AUDIO PLAYER (persistent across all pages)
-      ---------------------------------------------------------- */}
-      <section className="player global-player">
-        <audio controls className="player-audio" id="neonAudio">
-          <source
-            src="https://a9.asurahosting.com/listen/neonverse/radio.mp3"
-            type="audio/mpeg"
-          />
-        </audio>
-
-        <div className="player-meta">
-          <p>{nowPlaying}</p>
-        </div>
-      </section>
-     
-<div class="nav-wrapper"> 
-      {/* NAVIGATION */}
+      <p className="broadcast">Offline Well be back tomorrow 6am est</p>
+<h3>— the grid is powering up for the launch — </h3>
       <nav className="neon-nav">
         <Link to="/">Home</Link>
         <Link to="/artists">Artists</Link>
         <Link to="/monthly-vibes">Monthly Vibes</Link>
         <Link to="/register">Register</Link>
         <Link to="/manifesto">Manifesto</Link>
-        <Link to="submit">Submit Music</Link>
-      </nav> 
-      </div>
-{/* ---------------------------------------------------------
-         START OF MARQUEE HEADER 
-      ---------------------------------------------------------- */}
-             <ArtistMarquee />
-      {/* ---------------------------------------------------------
-         END OF MARQUEE HEADER
-      ---------------------------------------------------------- */}
+        <Link to="/testneon1">NeonTest1</Link>
+      </nav>
     </header>
   );
 }
@@ -92,58 +61,14 @@ function Document({ children }) {
 // -----------------------------------------------------------------------------
 // GLOBAL LAYOUT
 // -----------------------------------------------------------------------------
-function Layout({ children, nowPlaying }) {
+function Layout({ children }) {
   return (
     <>
-      <NeonHeader nowPlaying={nowPlaying} />
+      <NeonHeader />
       <main className="neon-main">{children}</main>
-<footer className="neon-footer flex flex-col items-center justify-center gap-6 py-10">
-  <Link
-    to="#"
-    onClick={(e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-
-      // ⭐ Delay so the flash happens when header is visible
-      setTimeout(() => {
-        // HEADER FLASH
-        const header = document.querySelector(".neon-header");
-        if (header) {
-          header.classList.add("header-flash");
-          setTimeout(() => header.classList.remove("header-flash"), 700);
-        }
-
-        // EQUALIZER SPIKE
-        const bars = document.querySelectorAll(".equalizer .bar");
-        bars.forEach((bar) => {
-          bar.classList.add("eq-spike");
-          setTimeout(() => bar.classList.remove("eq-spike"), 500);
-        });
-
-        // MICRO‑MESSAGE REWARD
-        const msg = document.createElement("div");
-        msg.className = "top-reward-msg";
-        msg.innerText = "Signal locked.";
-        header.appendChild(msg);
-
-        setTimeout(() => {
-          msg.remove();
-        }, 1500);
-      }, 150);
-    }}
-    className="footer-home-button pulsing-home text-blue-300 font-extrabold text-4xl tracking-wide 
-               border-4 border-blue-400 px-12 py-5 rounded-2xl 
-               hover:bg-blue-400 hover:text-black transition cursor-pointer"
-  >
-    Home
-  </Link>
-{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
-<div class="v-space"></div><br />
-  <p className="text-purple-300 text-lg font-semibold tracking-wide">
-    © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
-  </p>
-</footer>
- 
+      <footer className="neon-footer">
+        © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
+      </footer>
     </>
   );
 }
@@ -152,33 +77,9 @@ function Layout({ children, nowPlaying }) {
 // ROOT COMPONENT
 // -----------------------------------------------------------------------------
 export default function Root() {
-  const [nowPlaying, setNowPlaying] = useState("Loading track info…");
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    async function getNowPlaying() {
-      try {
-        const response = await fetch(
-          "https://a9.asurahosting.com/api/nowplaying/neonverse",
-          { cache: "no-store" }
-        );
-
-        const { now_playing } = await response.json();
-        setNowPlaying(`${now_playing.song.artist} — ${now_playing.song.title}`);
-      } catch {
-        setNowPlaying("Live broadcast in progress");
-      }
-    }
-
-    getNowPlaying();
-    const interval = setInterval(getNowPlaying, 15000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <Document>
-      <Layout nowPlaying={nowPlaying}>
+      <Layout>
         <Outlet />
       </Layout>
     </Document>
