@@ -1,189 +1,95 @@
-import "../seattle.css";
-import "../app.css";
+import { useEffect, useState } from "react";
 
-{/* =========================== START OF SEATTLE ================================== */}
-export default function Lynney() {
-  const image =
-    "/artists/lynney/lynney1.jpg";
+export default function Index() {
+  const [nowPlaying, setNowPlaying] = useState("Loading track info…");
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    async function getNowPlaying() {
+      try {
+        const response = await fetch(
+          "https://a9.asurahosting.com/api/nowplaying/neonverse",
+          { cache: "no-store" }
+        );
+
+        const { now_playing } = await response.json();
+        setNowPlaying(`${now_playing.song.artist} — ${now_playing.song.title}`);
+      } catch {
+        setNowPlaying("Live broadcast in progress");
+      }
+    }
+
+    getNowPlaying();
+    const interval = setInterval(getNowPlaying, 15000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
+    <main className="page-body index-white">
+  {/* FOOTER TRANSMISSION */}
+      <footer className="footer">
+        <p>A new breed of Future City transmission is coming on air.</p>
+        <p>Signal boosted.</p>
+        <p>Artists amplified.</p>
+        <p>Neon fully powered.</p>
+        <p className="footer-coming">Coming soon</p>
+      </footer>
+      {/* HEADER */}
+      <header className="header-block">
+        <p className="title neon-h4">Radio Low The Sky Feels Wide</p>
+        <p className="subtitle">Offline Well be back tomorrow 6am est</p>
+      </header>
 
-    <main className="seattle-page">
-
-      <section className="seattle-panel">
-        <section className="seattle-title">
-<h2 className="enter-button">
-   AOTM Spotlight Feature
-</h2>
-</section>
-{/* CSS SEATTLE PANEL - SEATTLE.CSS 
-        <h1 className="seattle-title">
-          Seattle Signal
-        </h1>
-         */}
-
-{/* CSS SEATTLE TAGLINE - SEATTLE.CSS 
-        <p className="seattle-tagline">
-          The Sound of Future City
-          <br />
-          Defining Neon Vibes. 24/7.
-        </p>
- */}
-
-        <p className="seattle-tagline">
-          NeonVerse Radio – Seattle Transmission
-        </p>
-
-{/* START OF LYNNEY IMAGE */}
-
-        <img
-    src="/artists/lynney/lynney1.jpg"
-    alt="Lynney — Artist of the Month"
-    className="aotm-img"
-  /> 
-  <br /> <br />
-  <img
-    src="/artists/lynney/Lost.jpg"
-    alt="Lynney — Artist of the Month"
-   
-  /> 
-{/* END OF LYNNEY IMAGE */}
-
-        <section className="seattle-content">
-
-
-          <h2 className="enter-button">
-   Artist of the Month - Lynney
-</h2>
-<br />
-
-<a
-          href="https://open.spotify.com/album/5cMqmbudEzhgFwgFdZlRfu"
-          target="_blank"
-          rel="noreferrer"
-          className="seattle-button2"
-        >
-          ♫ Lost
-        </a>
-{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
-<div class="v-space"></div>
-{/*
-          <p>
-            Rain falls. Signals drift.
-            The city hums beneath neon reflections.
-          </p>
-
-          <p>
-            Welcome to the Seattle Signal —
-            a darker atmospheric channel of
-            NeonVerse Radio, broadcasting from
-            the shadow of the Space Needle and
-            the neon-washed streets of the
-            Pacific Northwest.
-          </p>
-
-
-          <p>
-            Expect deep synthwave, ambient
-            electronic textures, cinematic indie
-            sounds, and late-night drive energy
-            shaped by Seattle's skyline.
-          </p>
-*/}
- <div class="neon-border">        
-
-Lynney is a Glasgow‑born singer‑songwriter 
-blending synthwave nostalgia with raw emotional storytelling, 
-crafting music that feels intimate, cinematic, and neon‑lit.
-
-Her latest single “Lost” — written by Lynney Williamson and 
-shaped through Evolution’s vocal production - dives into 
-the darker side of synthwave with haunting melodies 
-and pulsing retro tension. An advocate for neurodivergent creatives, 
-she creates music that feels personal yet universal, 
-a glowing soundtrack for anyone navigating the dark with hope.
+      {/* ARTIST OF THE MONTH */}
  
-          </div> <br /> 
-{/* ============================ START OF LYNNEY REVIEW ============================================== */}
-           <img
-    src="/artists/lynney/lynney3.jpg"
-    alt="Lynney — Artist of the Month"
-     />   <br /> 
-    <img
-    src="/artists/lynney/lynney5.jpg"
-    alt="Lynney — Artist of the Month"
-     />  
-          
-          
-           <h2 className="enter-button">
-   Lynney Transmission
-</h2>
-  <div class="neon-border">
-            Her single "Lost" explores the darker
-            side of synthwave with haunting
-            melodies and pulsing retro tension —
-            a midnight signal for anyone navigating
-            the shadows with hope.
-          </div> 
-{/*
-          <p>
-            
-
-Lynney is a Glasgow‑born singer‑songwriter 
-blending synthwave nostalgia with raw emotional storytelling, 
-crafting music that feels intimate, cinematic, and neon‑lit.
-
-Her latest single “Lost” — written by Lynney Williamson and 
-shaped through Evolution’s vocal production - dives into 
-the darker side of synthwave with haunting melodies 
-and pulsing retro tension. An advocate for neurodivergent creatives, 
-she creates music that feels personal yet universal, 
-a glowing soundtrack for anyone navigating the dark with hope.
- <br /> 
-          </p>*/}
-          
-<h2>
- Out now: Lynney's songs are officially live on all streaming services! 
-</h2>
-<img
-    src="/artists/lynney/lynney4.jpg"
-    alt="Lynney — Artist of the Month"
-     /> 
-                   <h2>
-            NeonVerse Review
-          </h2>
-
-{/* ============================ NEON CSS ============================================== */}
-         <h4 className="neon-review-mini">
-  "Lost" drifts into the NeonVerse like a midnight signal — subtle, tense, and emotionally charged.
-  <br />
-  A cinematic transmission built for late-night wanderers.
-</h4>
 
 
+      {/* OFFLINE LISTENING */}
+      <section className="offline">
+        <h3 className="offline-title">Listen While Offline</h3>
 
+        <p className="offline-desc">
+          NeonVerse Radio is available across multiple radio platforms.  
+          Tune in anywhere and experience The Sound of Future City.
+        </p>
 
-        </section>
-
-
-        <a
-        
-  href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
-  target="_blank"
-  rel="noreferrer"
-  className="enter-button"
-  style={{ fontSize: "1.8rem" }}
->
-  Enter Signal
-</a>
-
-
-
+        <ul className="offline-list">
+          <li><a href="https://onlineradiobox.com" className="link">OnlineRadioBox</a></li>
+          <li><a href="https://streema.com" className="link">Streema</a></li>
+          <li><a href="https://canadaradiostations.com" className="link">CanadaRadioStations</a></li>
+          <li><a href="https://radoxo.com" className="link">Radoxo</a></li>
+          <li><a href="https://radiotune.fm" className="link">RadioTune.fm</a></li>
+          <li><a href="https://mytuner-radio.com" className="link">myTunerRadio</a></li>
+        </ul>
       </section>
 
+      {/* SOCIAL LINKS */}
+      <section className="social">
+        <p className="social-text">
+          Check our official Instagram and Facebook for news and updates:
+        </p>
+
+        <p>
+          <a
+            href="https://www.instagram.com/neondawn.project/"
+            className="link"
+            target="_blank"
+          >
+            Instagram — Neon Dawn Project
+          </a>
+        </p>
+      </section>
+
+      {/* FOOTER TRANSMISSION */}
+      <footer className="footer">
+        <p>A new breed of Future City transmission is coming on air.</p>
+        <p>Signal boosted.</p>
+        <p>Artists amplified.</p>
+        <p>Neon fully powered.</p>
+        <p className="footer-coming">Coming soon</p>
+      </footer>
 
     </main>
-
   );
 }
