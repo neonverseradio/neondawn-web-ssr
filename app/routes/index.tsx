@@ -44,7 +44,7 @@ export default function Lynney() {
   /> 
   <br /> <br />
   <img
-    src="/artists/karl/karl.png"
+    src="/artists/karl/hacker.png"
     alt="karl — Artist of the Month"
    
   /> 
@@ -104,12 +104,20 @@ His work has become a staple for creators, filmmakers, game developers, and synt
     src="/artists/karl/wba4.jpg"
     alt="Karl — Artist of the Month"
      />   <br /> 
+      <img
+    src="/artists/karl/wba2.jpg"
+    alt="Karl — Artist of the Month"
+     />  
     <br />
           
           
            <h2 className="enter-button">
    Karl Transmission
-</h2>
+   </h2> <br />
+ <img
+    src="/artists/karl/wba5.png"
+    alt="Karl — Artist of the Month"
+     />  
   <div class="neon-border">
             Karl’s catalog is a masterclass in mood-building. 
             His tracks move like scenes from neon‑lit thrillers — pulsing basslines, dystopian pads, 
@@ -145,7 +153,12 @@ a glowing soundtrack for anyone navigating the dark with hope.
 </h2>
 <img
     src="/artists/karl/karl.png"
-    alt="Lynney — Artist of the Month"
+    alt="Karl — Artist of the Month"
+     /> 
+<br />
+     <img
+    src="/artists/karl/karl6.png"
+    alt="Karl — Artist of the Month"
      /> 
                    <h2>
             NeonVerse Review
