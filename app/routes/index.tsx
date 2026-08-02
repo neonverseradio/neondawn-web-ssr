@@ -38,14 +38,14 @@ export default function Lynney() {
 {/* START OF LYNNEY IMAGE */}
 
         <img
-    src="/artists/lynney/lynney1.jpg"
-    alt="Lynney — Artist of the Month"
+    src="/artists/karl/wba1.jpg"
+    alt="Karl — Artist of the Month"
     className="aotm-img"
   /> 
   <br /> <br />
   <img
-    src="/artists/lynney/Lost.jpg"
-    alt="Lynney — Artist of the Month"
+    src="/artists/karl/karl.png"
+    alt="karl — Artist of the Month"
    
   /> 
 {/* END OF LYNNEY IMAGE */}
@@ -54,17 +54,17 @@ export default function Lynney() {
 
 
           <h2 className="enter-button">
-   Artist of the Month - Lynney
+   Artist of the Month - Karl - WBA
 </h2>
 <br />
 
 <a
-          href="https://open.spotify.com/album/5cMqmbudEzhgFwgFdZlRfu"
+          href="https://www.youtube.com/watch?v=NZ4Of3lID84&list=RDNZ4Of3lID84&start_radio=1"
           target="_blank"
           rel="noreferrer"
           className="seattle-button2"
         >
-          ♫ Lost
+          ♫ Hacker
         </a>
 {/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
 <div class="v-space"></div>
@@ -93,38 +93,35 @@ export default function Lynney() {
 */}
  <div class="neon-border">        
 
-Lynney is a Glasgow‑born singer‑songwriter 
-blending synthwave nostalgia with raw emotional storytelling, 
-crafting music that feels intimate, cinematic, and neon‑lit.
-
-Her latest single “Lost” — written by Lynney Williamson and 
-shaped through Evolution’s vocal production - dives into 
-the darker side of synthwave with haunting melodies 
-and pulsing retro tension. An advocate for neurodivergent creatives, 
-she creates music that feels personal yet universal, 
-a glowing soundtrack for anyone navigating the dark with hope.
+Karl Casey — the mind behind White Bat Audio — stands as one of the most influential forces in modern synthwave. 
+For over 15 years, he’s carved out a sonic universe where retro horror, sci‑fi atmospheres, 
+and cyberpunk tension collide with razor‑sharp production and unmistakable guitar-driven energy. 
+His work has become a staple for creators, filmmakers, game developers, and synthwave fans worldwide.
  
           </div> <br /> 
 {/* ============================ START OF LYNNEY REVIEW ============================================== */}
            <img
-    src="/artists/lynney/lynney3.jpg"
-    alt="Lynney — Artist of the Month"
+    src="/artists/karl/wba4.jpg"
+    alt="Karl — Artist of the Month"
      />   <br /> 
-    <img
-    src="/artists/lynney/lynney5.jpg"
-    alt="Lynney — Artist of the Month"
-     />  
+    <br />
           
           
            <h2 className="enter-button">
-   Lynney Transmission
+   Karl Transmission
 </h2>
   <div class="neon-border">
-            Her single "Lost" explores the darker
-            side of synthwave with haunting
-            melodies and pulsing retro tension —
-            a midnight signal for anyone navigating
-            the shadows with hope.
+            Karl’s catalog is a masterclass in mood-building. 
+            His tracks move like scenes from neon‑lit thrillers — pulsing basslines, dystopian pads, 
+            and riffs that feel pulled straight from forgotten VHS nightmares. <br />
+            Whether it’s retro horror, sci‑fi ambience, or dark cyberpunk synthwave, 
+            Karl’s music doesn’t just accompany visuals — it creates them.
+<br />
+    Cinematic synthwave — atmospheric, brooding, immersive
+
+    Thrash/death metal riffs — aggressive, high‑octane, unmistakably Karl
+
+    Hybrid soundtracks — perfect for creators who need tension, adrenaline, or retro futurism
           </div> 
 {/*
           <p>
@@ -144,10 +141,10 @@ a glowing soundtrack for anyone navigating the dark with hope.
           </p>*/}
           
 <h2>
- Out now: Lynney's songs are officially live on all streaming services! 
+ Out now: Karl's songs are officially live on all streaming services! 
 </h2>
 <img
-    src="/artists/lynney/lynney4.jpg"
+    src="/artists/karl/karl.png"
     alt="Lynney — Artist of the Month"
      /> 
                    <h2>
@@ -156,9 +153,13 @@ a glowing soundtrack for anyone navigating the dark with hope.
 
 {/* ============================ NEON CSS ============================================== */}
          <h4 className="neon-review-mini">
-  "Lost" drifts into the NeonVerse like a midnight signal — subtle, tense, and emotionally charged.
+  "Karl Casey is a veteran producer and guitarist with over 15 years of experience, 
+  known for shaping the dark‑synth, retro‑horror, 
+  and cyberpunk sound under his project White Bat Audio.
   <br />
-  A cinematic transmission built for late-night wanderers.
+   He blends cinematic synthwave with thrash‑infused riffs, 
+  creating atmospheric music that’s become a go‑to soundtrack for creators, 
+  filmmakers, and game developers.
 </h4>
 
 
@@ -169,7 +170,7 @@ a glowing soundtrack for anyone navigating the dark with hope.
 
         <a
         
-  href="https://lynneywilliamson.bandcamp.com/track/i-see-you"
+  href="https://whitebataudio.com/"
   target="_blank"
   rel="noreferrer"
   className="enter-button"
