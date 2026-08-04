@@ -28,6 +28,12 @@ export default [
       // YTC artist page
      route("ytc", "routes/ytc.tsx"),
 
+      // Novelles artist page
+     route("novelley", "routes/novelley.tsx"),
+
+      // Kurt artist page
+     route("kurt", "routes/kurt.tsx"),
+
       // SUBMIT artist page
      route("submit", "routes/submit.tsx"),
 

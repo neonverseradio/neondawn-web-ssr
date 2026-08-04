@@ -44,7 +44,18 @@ const artists = [
     image: "/header/keshon.png",
     link: "/keshon",
   },
-
+{
+    name: "Novelley",
+    caption: "Lost Alley♫Time and Space",
+    image: "/header/novelley4.jpg",
+    link: "/novelley",
+  },
+  {
+    name: "Kurt",
+    caption: "When Angels Sing",
+    image: "/header/kurt2.png",
+    link: "/kurt",
+  },
 ];
 
 function ArtistTrack() {
