@@ -3,7 +3,9 @@ export interface ArtistMeta {
   slug: string;
   img: string;
 }
-
+/* ==========================================================
+   ARTIST SEACH IMAGES
+========================================================== */
 export const ARTISTS: ArtistMeta[] = [
   {
     name: "Lynney",
@@ -43,11 +45,11 @@ export const ARTISTS: ArtistMeta[] = [
   {
     name: "Novelley",
     slug: "novelley",
-    img: "/artists/novelley/novelley4.png",
+    img: "/artists/novelley/novelley4.jpg",
   },
   {
     name: "Kurt",
     slug: "kurt",
-    img: "/artists/novelley/kurt2.png",
+    img: "/artists/kurt/kurt2.png",
   },
 ];

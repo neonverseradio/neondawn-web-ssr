@@ -141,6 +141,16 @@ export default function Artists() {
           </div>
 
         </div>
+
+        <div className="flex flex-col items-center">
+            <img src="/novelley1.png" alt="Novelley" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Novelley ♫ Lost Alley ♫ Time and Space</p>
+          </div>
+
+           <div className="flex flex-col items-center">
+            <img src="/kurt2.png" alt="Kurt" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Kurt ♫ When Angels Sing</p>
+          </div>
 <br /> <br />
      <div className="transmission-block">
   <p>A new breed of Future City transmission is coming on air.</p>

@@ -50,7 +50,7 @@ function NeonHeader({ nowPlaying }) {
         <Link to="/monthly-vibes">Monthly Vibes</Link>
         <Link to="/register">Register</Link>
         <Link to="/manifesto">Manifesto</Link>
-        <Link to="submit">Submit Music</Link>
+        <Link to="submit">Submit</Link>
       </nav> 
       </div>
 {/* ---------------------------------------------------------
