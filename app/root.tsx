@@ -1,4 +1,5 @@
 import "./app.css";
+import "./seattle.css";
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
 import ArtistMarquee from "./components/artistmarquee";
@@ -139,6 +140,24 @@ function Layout({ children, nowPlaying }) {
   </Link>
 {/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
 <div class="v-space"></div><br />
+  
+
+  <br /><br />
+  {/* ============================ START OF NEON ENGINE ============================================== */}
+  <a
+  href="https://www.facebook.com/NeonEngineOfficial"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    className="neon-engine-footer"
+    src="/neon3.png"
+    alt="Neon Engine"
+  />
+</a>
+<p className="text-purple-300 text-lg font-semibold tracking-wide">
+     Custom websites for artists, creators & independent brands.
+  </p>
   <p className="text-purple-300 text-lg font-semibold tracking-wide">
     © {new Date().getFullYear()} NeonVerse Radio — The Sound of Future City
   </p>

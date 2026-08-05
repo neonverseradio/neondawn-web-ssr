@@ -442,3 +442,18 @@
   display: inline-block;
   width: 1.5rem; /* adjust for desired gap */
 }
+/* =====================================
+   NEON ENGINE FOOTER
+   ===================================== */
+   .neon-engine-footer {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  transition: transform .25s ease;
+}
+
+.neon-engine-footer:hover {
+  transform: scale(1.02);
+}
