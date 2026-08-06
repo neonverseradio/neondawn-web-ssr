@@ -37,5 +37,13 @@ export default [
       // SUBMIT artist page
      route("submit", "routes/submit.tsx"),
 
+      // SUBMIT artist page
+     route("register", "routes/register.tsx"),
+
+     // SUBMIT artist page
+     route("playlist", "routes/playlist.tsx"),
+
+// SUBMIT artist page
+     route("about", "routes/about.tsx"),
 
 ] satisfies RouteConfig;

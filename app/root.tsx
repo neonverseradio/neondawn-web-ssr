@@ -48,10 +48,10 @@ function NeonHeader({ nowPlaying }) {
       <nav className="neon-nav">
         <Link to="/">Home</Link>
         <Link to="/artists">Artists</Link>
-        <Link to="/monthly-vibes">Monthly Vibes</Link>
+        <Link to="/playlist">♪PlayList♪</Link>
         <Link to="/register">Register</Link>
-        <Link to="/manifesto">Manifesto</Link>
-        <Link to="submit">Submit</Link>
+        <Link to="/about">About</Link>
+        <Link to="/submit">Submit</Link>
       </nav> 
       </div>
 {/* ---------------------------------------------------------
