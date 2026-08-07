@@ -1,0 +1,66 @@
+/* --- White Neon Embed Player --- */
+.player-audio::-webkit-media-controls-panel {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  box-shadow: 0 0 20px #ff00ff, inset 0 0 10px #00eaff;
+  backdrop-filter: blur(6px);
+}
+
+.player-audio::-webkit-media-controls-play-button {
+  filter: drop-shadow(0 0 6px #ff00ff);
+}
+
+.player-audio::-webkit-media-controls-current-time-display,
+.player-audio::-webkit-media-controls-time-remaining-display {
+  color: #00eaff;
+  text-shadow: 0 0 6px #00eaff;
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+}
+
+.player-audio::-webkit-media-controls-timeline {
+  accent-color: #00eaff;
+}
+
+.player-audio::-webkit-media-controls-volume-slider {
+  accent-color: #ff00ff;
+}
+
+/* --- Neon Light Blue Glow --- */
+.player-meta.glow-meta p {
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  color: #00eaff;
+  text-shadow:
+    0 0 6px #00eaff,
+    0 0 12px #00eaff,
+    0 0 24px #00eaff,
+    0 0 48px #00eaff;
+  animation: bluePulse 3s ease-in-out infinite;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-align: center;
+}
+
+@keyframes bluePulse {
+  0%   { text-shadow: 0 0 6px #00eaff, 0 0 12px #00eaff; opacity: 0.8; }
+  50%  { text-shadow: 0 0 12px #00eaff, 0 0 24px #00eaff; opacity: 1; }
+  100% { text-shadow: 0 0 6px #00eaff, 0 0 12px #00eaff; opacity: 0.8; }
+}
+/* --- Casio Watch Style Neon Green (NO GLOW, NO ANIMATION) --- */
+@font-face {
+  font-family: 'Digital7';
+  src: url('/fonts/digital-7.ttf') format('truetype');
+}
+
+.player-meta.glow-meta p {
+  font-family: 'Digital7', monospace;
+  font-size: 1.1rem;
+  color: #00ff66; /* neon green */
+  text-shadow: none; /* absolutely no glow */
+  letter-spacing: 0.08em; /* LCD spacing */
+  font-weight: normal;
+  text-align: center;
+  animation: none !important; /* kill any leftover animation */
+}
+
+

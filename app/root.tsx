@@ -1,5 +1,7 @@
+import "./audio.css";
 import "./app.css";
 import "./seattle.css";
+
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
 import ArtistMarquee from "./components/artistmarquee";
@@ -9,40 +11,46 @@ import ArtistMarquee from "./components/artistmarquee";
 // -----------------------------------------------------------------------------
 function NeonHeader({ nowPlaying }) {
   return (
-   
     <header className="neon-header">
-       
+
       <h1 className="title">NeonVerse Radio</h1>
       <p className="subtitle">Toronto Indie Station</p>
       <p className="tagline">The Sound of Future City</p>
 
-      <div className="equalizer">
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+      {/* Reactive Equalizer */}
+      <div className="equalizer reactive">
+        <div className="bar" />
+        <div className="bar" />
+        <div className="bar" />
+        <div className="bar" />
+        <div className="bar" />
       </div>
 
-      <p className="broadcast">Neon broadcast initializing</p>
-      <h3>— the grid is powering up for the launch — </h3>
+      <p className="broadcast">Signal initializing…</p>
+      <h3>— grid link established —</h3>
+   
+<div class="nav-wrapper"> 
+      {/* GLOBAL AUDIO PLAYER */}
+      <section className="player global-player neon-panel">
+        <div className="player-frame">
+          <audio controls className="player-audio" id="neonAudio">
+            <source
+              src="https://a9.asurahosting.com/listen/neonverse/radio.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+          {/* Metadata */}
+          
+          <div className="player-meta glow-meta">
+            <p>{nowPlaying}</p>
+          </div>
+                    
+                                                </div>
 
-      {/* ---------------------------------------------------------
-         GLOBAL AUDIO PLAYER (persistent across all pages)
-      ---------------------------------------------------------- */}
-      <section className="player global-player">
-        <audio controls className="player-audio" id="neonAudio">
-          <source
-            src="https://a9.asurahosting.com/listen/neonverse/radio.mp3"
-            type="audio/mpeg"
-          />
-        </audio>
-
-        <div className="player-meta">
-          <p>{nowPlaying}</p>
-        </div>
+        {/* Transmission Line */}
+        <div className="signal-line" />
       </section>
-     
+     </div>   <br />
 <div class="nav-wrapper"> 
       {/* NAVIGATION */}
       <nav className="neon-nav">
