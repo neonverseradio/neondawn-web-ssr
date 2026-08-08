@@ -1,203 +1,120 @@
-import "../seattle.css";
-import "../app.css";
+import { useEffect, useState } from "react";
 
-{/* =========================== START OF SEATTLE ================================== */}
-export default function Lynney() {
-  const image =
-    "/artists/lynney/lynney1.jpg";
+export default function Index() {
+  const [nowPlaying, setNowPlaying] = useState("Loading track info…");
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    async function getNowPlaying() {
+      try {
+        const response = await fetch(
+          "https://a9.asurahosting.com/api/nowplaying/neonverse",
+          { cache: "no-store" }
+        );
+
+        const { now_playing } = await response.json();
+        setNowPlaying(`${now_playing.song.artist} — ${now_playing.song.title}`);
+      } catch {
+        setNowPlaying("Live broadcast in progress");
+      }
+    }
+
+    getNowPlaying();
+    const interval = setInterval(getNowPlaying, 15000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
+    <main className="page-body index-white">
+  {/* FOOTER TRANSMISSION */}
+      <footer className="footer">
+        <p>A new breed of Future City transmission is coming on air.</p>
+        <p>Signal boosted.</p>
+        <p>Artists amplified.</p>
+        <p>Neon fully powered.</p>
+        <p className="footer-coming">Coming soon</p>
+      </footer>
+      {/* HEADER */}
+      <header className="header-block">
+        <p className="title neon-h4">Radio Low The Sky Feels Wide</p>
+        <p className="subtitle">Offline Well be back tomorrow 6am est</p>
+      </header>
 
-    <main className="seattle-page">
-
-      <section className="seattle-panel">
-        <section className="seattle-title">
-<h2 className="enter-button">
-   AOTM Spotlight Feature
-</h2>
-</section>
-{/* CSS SEATTLE PANEL - SEATTLE.CSS 
-        <h1 className="seattle-title">
-          Seattle Signal
-        </h1>
-         */}
-
-{/* CSS SEATTLE TAGLINE - SEATTLE.CSS 
-        <p className="seattle-tagline">
-          The Sound of Future City
-          <br />
-          Defining Neon Vibes. 24/7.
-        </p>
- */}
-
-        <p className="seattle-tagline">
-          NeonVerse Radio – Seattle Transmission
-        </p>
-
-{/* START OF LYNNEY IMAGE */}
-
-        <img
-    src="/artists/karl/wba1.jpg"
-    alt="Karl — Artist of the Month"
-    className="aotm-img"
-  /> 
-  <br /> <br />
-  <img
-    src="/artists/karl/hacker.png"
-    alt="karl — Artist of the Month"
-   
-  /> 
-{/* END OF LYNNEY IMAGE */}
-
-        <section className="seattle-content">
-
-
-          <h2 className="enter-button">
-   Artist of the Month - Karl - WBA
-</h2>
-<br />
-
-<a
-          href="https://www.youtube.com/watch?v=NZ4Of3lID84&list=RDNZ4Of3lID84&start_radio=1"
-          target="_blank"
-          rel="noreferrer"
-          className="seattle-button2"
-        >
-          ♫ Hacker
-        </a>
-{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
-<div class="v-space"></div>
-{/*
-          <p>
-            Rain falls. Signals drift.
-            The city hums beneath neon reflections.
-          </p>
-
-          <p>
-            Welcome to the Seattle Signal —
-            a darker atmospheric channel of
-            NeonVerse Radio, broadcasting from
-            the shadow of the Space Needle and
-            the neon-washed streets of the
-            Pacific Northwest.
-          </p>
-
-
-          <p>
-            Expect deep synthwave, ambient
-            electronic textures, cinematic indie
-            sounds, and late-night drive energy
-            shaped by Seattle's skyline.
-          </p>
-*/}
- <div class="neon-border">        
-
-Karl Casey — the mind behind White Bat Audio — stands as one of the most influential forces in modern synthwave. 
-For over 15 years, he’s carved out a sonic universe where retro horror, sci‑fi atmospheres, 
-and cyberpunk tension collide with razor‑sharp production and unmistakable guitar-driven energy. 
-His work has become a staple for creators, filmmakers, game developers, and synthwave fans worldwide.
+      {/* ARTIST OF THE MONTH */}
  
-          </div> <br /> 
-{/* ============================ START OF LYNNEY REVIEW ============================================== */}
-           <img
-    src="/artists/karl/wba4.jpg"
-    alt="Karl — Artist of the Month"
-     />   <br /> 
-      <img
-    src="/artists/karl/wba2.jpg"
-    alt="Karl — Artist of the Month"
-     />  
-    <br />
-          
-          
-           <h2 className="enter-button">
-   Karl Transmission
-   </h2> <br />
- <img
-    src="/artists/karl/wba5.png"
-    alt="Karl — Artist of the Month"
-     />  
-  <div class="neon-border">
-            Karl’s catalog is a masterclass in mood-building. 
-            His tracks move like scenes from neon‑lit thrillers — pulsing basslines, dystopian pads, 
-            and riffs that feel pulled straight from forgotten VHS nightmares. <br />
-            Whether it’s retro horror, sci‑fi ambience, or dark cyberpunk synthwave, 
-            Karl’s music doesn’t just accompany visuals — it creates them.
-<br />
-    Cinematic synthwave — atmospheric, brooding, immersive
 
-    Thrash/death metal riffs — aggressive, high‑octane, unmistakably Karl
+      {/* LIVE PLAYER */}
+      <section className="player">
+        <h3 className="player-title">Live Stream</h3>
 
-    Hybrid soundtracks — perfect for creators who need tension, adrenaline, or retro futurism
-          </div> 
-{/*
-          <p>
-            
+        <audio controls className="player-audio" id="neonAudio">
+          <source
+            src="https://a9.asurahosting.com/listen/neonverse/radio.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
 
-Lynney is a Glasgow‑born singer‑songwriter 
-blending synthwave nostalgia with raw emotional storytelling, 
-crafting music that feels intimate, cinematic, and neon‑lit.
-
-Her latest single “Lost” — written by Lynney Williamson and 
-shaped through Evolution’s vocal production - dives into 
-the darker side of synthwave with haunting melodies 
-and pulsing retro tension. An advocate for neurodivergent creatives, 
-she creates music that feels personal yet universal, 
-a glowing soundtrack for anyone navigating the dark with hope.
- <br /> 
-          </p>*/}
-          
-<h2>
- Out now: Karl's songs are officially live on all streaming services! 
-</h2>
-<img
-    src="/artists/karl/karl.png"
-    alt="Karl — Artist of the Month"
-     /> 
-<br />
-     <img
-    src="/artists/karl/karl6.png"
-    alt="Karl — Artist of the Month"
-     /> 
-                   <h2>
-            NeonVerse Review
-          </h2>
-
-{/* ============================ NEON CSS ============================================== */}
-         <h4 className="neon-review-mini">
-  "Karl Casey is a veteran producer and guitarist with over 15 years of experience, 
-  known for shaping the dark‑synth, retro‑horror, 
-  and cyberpunk sound under his project White Bat Audio.
-  <br />
-   He blends cinematic synthwave with thrash‑infused riffs, 
-  creating atmospheric music that’s become a go‑to soundtrack for creators, 
-  filmmakers, and game developers.
-</h4>
-
-
-
-
-        </section>
-
-
-        <a
-        
-  href="https://whitebataudio.com/"
-  target="_blank"
-  rel="noreferrer"
-  className="enter-button"
-  style={{ fontSize: "1.8rem" }}
->
-  Enter Signal
-</a>
-
-
-
+        <div className="player-meta">
+          <p>{nowPlaying}</p>
+        </div>
       </section>
 
+      {/* OFFLINE LISTENING */}
+      <section className="offline">
+        <h3 className="offline-title">Listen While Offline</h3>
+
+        <p className="offline-desc">
+          NeonVerse Radio is available across multiple radio platforms.  
+          Tune in anywhere and experience The Sound of Future City.
+        </p>
+
+        <ul className="offline-list">
+          <li><a href="https://onlineradiobox.com" className="link">OnlineRadioBox</a></li>
+          <li><a href="https://streema.com" className="link">Streema</a></li>
+          <li><a href="https://canadaradiostations.com" className="link">CanadaRadioStations</a></li>
+          <li><a href="https://radoxo.com" className="link">Radoxo</a></li>
+          <li><a href="https://radiotune.fm" className="link">RadioTune.fm</a></li>
+          <li><a href="https://mytuner-radio.com" className="link">myTunerRadio</a></li>
+        </ul>
+      </section>
+
+      {/* SOCIAL LINKS */}
+      <section className="social">
+        <p className="social-text">
+          Check our official Instagram and Facebook for news and updates:
+        </p>
+
+        <p>
+          <a
+            href="https://www.instagram.com/neondawn.project/"
+            className="link"
+            target="_blank"
+          >
+            Instagram — Neon Dawn Project
+          </a>
+        </p>
+
+        <p>
+          <a
+            href="https://www.facebook.com/NeonVerseRadio"
+            className="link"
+            target="_blank"
+          >
+            Facebook — NeonVerse Radio
+          </a>
+        </p>
+      </section>
+
+      {/* FOOTER TRANSMISSION */}
+      <footer className="footer">
+        <p>A new breed of Future City transmission is coming on air.</p>
+        <p>Signal boosted.</p>
+        <p>Artists amplified.</p>
+        <p>Neon fully powered.</p>
+        <p className="footer-coming">Coming soon</p>
+      </footer>
 
     </main>
-
   );
 }
