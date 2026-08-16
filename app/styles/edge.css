@@ -1,0 +1,134 @@
+/* ---------------------------------------------------------
+   NEONVERSE EDGE MENU SYSTEM
+   --------------------------------------------------------- */
+
+/* Trigger zone for hover activation */
+#edge-trigger {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 100vh;
+  z-index: 9999;
+}
+
+/* Main edge menu container */
+.edge-menu {
+  position: fixed;
+  top: 0;
+  left: -80px; /* hidden by default */
+  height: 100vh;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: transparent;
+  transition: left 0.25s ease;
+  z-index: 9998;
+}
+
+/* Slide out when active */
+.edge-menu.open {
+  left: 0;
+}
+
+/* Individual icon blocks */
+.edge-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 8px #00ffff);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.edge-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Icon images */
+.edge-icon img {
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+/* Hint labels */
+.hint {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 255, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: #00ffff;
+  font-size: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.edge-icon:hover .hint {
+  opacity: 1;
+}
+
+/* Optional glow animation */
+@keyframes neonPulse {
+  0% {
+    filter: drop-shadow(0 0 6px #00ffff);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #00ffff);
+  }
+  100% {
+    filter: drop-shadow(0 0 6px #00ffff);
+  }
+}
+
+.edge-icon img {
+  animation: neonPulse 2s infinite;
+}
+/* ---------------------------------------------------------
+   MOBILE RESPONSIVE EDGE MENU
+   --------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* Bigger trigger zone for touch */
+  #edge-trigger {
+    width: 28px;
+  }
+
+  /* Wider menu for finger-friendly icons */
+  .edge-menu {
+    width: 100px;
+    left: -100px; /* hidden by default */
+  }
+
+  .edge-menu.open {
+    left: 0;
+  }
+
+  /* Larger icons */
+  .edge-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  /* More spacing between icons */
+  .edge-menu {
+    gap: 32px;
+  }
+
+  /* Bigger hint labels */
+  .hint {
+    left: 80px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

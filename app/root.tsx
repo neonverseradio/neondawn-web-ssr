@@ -5,6 +5,7 @@ import "./seattle.css";
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
 import ArtistMarquee from "./components/artistmarquee";
+import Edge from "./components/edge";   // ← REQUIRED
 
 // -----------------------------------------------------------------------------
 // GLOBAL NEON HEADER
@@ -62,6 +63,9 @@ function NeonHeader({ nowPlaying }) {
         <Link to="/submit">Submit</Link>
       </nav> 
       </div>
+
+     
+
 {/* ---------------------------------------------------------
          START OF MARQUEE HEADER 
       ---------------------------------------------------------- */}
@@ -69,6 +73,7 @@ function NeonHeader({ nowPlaying }) {
       {/* ---------------------------------------------------------
          END OF MARQUEE HEADER
       ---------------------------------------------------------- */}
+        <Edge />        {/* GLOBAL EDGE MENU */}
     </header>
   );
 }
