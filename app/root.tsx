@@ -73,7 +73,9 @@ function NeonHeader({ nowPlaying }) {
       {/* ---------------------------------------------------------
          END OF MARQUEE HEADER
       ---------------------------------------------------------- */}
+      
         <Edge />        {/* GLOBAL EDGE MENU */}
+        
     </header>
   );
 }
@@ -98,6 +100,7 @@ function Document({ children }) {
       <body>
         {children}
         <Scripts />
+        
       </body>
     </html>
   );
