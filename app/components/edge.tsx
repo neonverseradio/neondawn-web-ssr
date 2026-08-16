@@ -11,25 +11,73 @@ export default function Edge() {
     const show = () => setOpen(true);
     const hide = () => setOpen(false);
 
-    // Open when entering trigger zone
+    /* ---------------------------------------------------------
+       DESKTOP FEATURE — Hover-based Edge Menu
+       --------------------------------------------------------- */
     trigger?.addEventListener("mouseenter", show);
 
-    // Close only if mouse is NOT inside menu
     trigger?.addEventListener("mouseleave", () => {
       setTimeout(() => {
         if (!menu?.matches(":hover")) hide();
       }, 50);
     });
 
-    // Keep open while hovering menu
     menu?.addEventListener("mouseenter", show);
 
-    // Close only if mouse is NOT inside trigger zone
     menu?.addEventListener("mouseleave", () => {
       setTimeout(() => {
         if (!trigger?.matches(":hover")) hide();
       }, 50);
     });
+
+    /* ---------------------------------------------------------
+       PHONE FEATURE — Global Swipe-Left Gesture
+       --------------------------------------------------------- */
+    if (window.innerWidth <= 768) {
+      let startX = 0;
+      let currentX = 0;
+      const swipeThreshold = 50; // distance required to trigger
+
+      const onTouchStart = (e) => {
+        startX = e.touches[0].clientX;
+        currentX = startX;
+      };
+
+      const onTouchMove = (e) => {
+        currentX = e.touches[0].clientX;
+
+        // Detect swipe-left gesture
+        if (startX - currentX > swipeThreshold) {
+          show();
+        }
+      };
+
+      const onTouchEnd = () => {
+        startX = 0;
+        currentX = 0;
+      };
+
+      document.addEventListener("touchstart", onTouchStart);
+      document.addEventListener("touchmove", onTouchMove);
+      document.addEventListener("touchend", onTouchEnd);
+
+      // Tap outside closes menu
+      document.addEventListener("touchstart", (e) => {
+        if (!menu?.contains(e.target)) hide();
+      });
+
+      // Cleanup mobile listeners
+      return () => {
+        document.removeEventListener("touchstart", onTouchStart);
+        document.removeEventListener("touchmove", onTouchMove);
+        document.removeEventListener("touchend", onTouchEnd);
+        document.removeEventListener("touchstart", hide);
+      };
+    }
+
+    /* ---------------------------------------------------------
+       END PHONE FEATURE
+       --------------------------------------------------------- */
 
     return () => {
       trigger?.removeEventListener("mouseenter", show);
