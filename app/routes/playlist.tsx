@@ -7,64 +7,73 @@ import React from "react";
 export default function Submit() {
   return (
     <main className="flex flex-col items-center justify-center px-6 py-20 text-center text-neutral-200">
-      
-<div class="neon-border">
 
-    <h1 className="station-title">COMING SOON</h1>
-      <p className="text-lg opacity-80 max-w-xl mb-10">
-        “Radio low, the sky feels wide.”
-      </p>
-
-      <section className="space-y-4 text-lg">
-        <div>
-          <span className="font-semibold">Contact 1:</span>{" "}
-          <a
-            href="mailto:neonverseradio@gmail.com"
-            className="text-cyan-300 hover:text-cyan-200"
-          >
-            neonverseradio@gmail.com
-          </a>
-        </div>
-
-        <div>
-          <span className="font-semibold">Contact 2:</span>{" "}
-          <a
-            href="mailto:neondawn.project@gmail.com"
-            className="text-cyan-300 hover:text-cyan-200"
-          >
-            neondawn.project@gmail.com
-          </a>
-        </div>
-
-        <div>
-          <span className="font-semibold">Instagram:</span>{" "}
-          <a
-            href="https://www.instagram.com/neondawn.project/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-300 hover:text-cyan-200"
-          >
-            @neondawn.project
-          </a>
-        </div>
+      {/* Dawn Boot Sequence */}
+      <section className="w-full max-w-3xl mb-16">
+        <h2 className="text-3xl font-bold neon-text mb-2">
+          Dawn Boot Sequence (6:00 AM – 12:00 PM)
+        </h2>
+        <ul className="playlist-list">
+          <li>Future City Glow – Neonverse Radio</li>
+          <li>Time and Space – Novelley</li>
+          <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
+          <li>Over the Skyline – Lila Monroe</li>
+          <li>Neon Gridlock – Neon Dawn</li>
+          <li>Dissociate – Meeka</li>
+          <li>Neondawn – Neon Dawn</li>
+          <li>Morning ASMR – Neonverse Radio</li>
+          <li>Neon Dawn – Neon Dawn</li>
+          <li>Summer Synth Vibes – Neonverse Radio</li>
+          <li>Control – Ilovemakonnen / YTC</li>
+          <li>Hackers – White Bat Audio / Karl Casey</li>
+        </ul>
       </section>
 
-      <footer className="mt-20 text-sm opacity-60 leading-relaxed">
-        <p>© 2026 Neon Dawn</p>
-        <p>
-          © 2026 NeonVerse Radio – Toronto, Canada  
-          <br />
-          Independent Online Radio Station  
-          <br />
-          The Sound of Future City
-        </p>
-      </footer>
-      </div>
+      {/* High Score Highway */}
+      <section className="w-full max-w-3xl mb-16">
+        <h2 className="text-3xl font-bold neon-text mb-2">
+          High Score Highway (12:00 PM – 6:00 PM)
+        </h2>
+        <ul className="playlist-list">
+          <li>Future City Glow – Neonverse Radio</li>
+          <li>Summer Synth Vibes – Neonverse Radio</li>
+          <li>Twist the Cap (Church Street Ep.) – Martyrs</li>
+          <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
+          <li>Hackers – White Bat Audio / Karl Casey</li>
+          <li>Neon Gridlock – Neon Dawn</li>
+          <li>Over the Skyline – Lila Monroe</li>
+          <li>Time and Space – Novelley</li>
+          <li>Afternoon Rush – Neonverse Radio</li>
+          <li>Two Masters Two Relics – Neon Dawn</li>
+          <li>Control – Ilovemakonnen / YTC</li>
+          <li>Spray U – XD:I</li>
+          <li>Baby You're a Big Star Now – Arwin Godwin</li>
+        </ul>
+      </section>
 
-      <h4 className="fontstyle1">PLAYLIST</h4>
-
- <p className="fontstyle2">NeonVerse Radio is an independent online radio station based in Toronto, Canada.</p>
-
+      {/* Night Drive Chill Wave */}
+      <section className="w-full max-w-3xl mb-16">
+        <h2 className="text-3xl font-bold neon-text mb-2">
+          Night Drive Chill Wave (6:00 PM – 12:00 AM)
+        </h2>
+        <ul className="playlist-list">
+          <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
+          <li>Drowning Days – Martyrs</li>
+          <li>Stuntin on Em (193 YTC Mak) – Ilovemakonnen / YTC</li>
+          <li>Night Out Vibes – Neonverse Radio</li>
+          <li>Two Masters Two Relics – Neon Dawn</li>
+          <li>Hackers – White Bat Audio / Karl Casey</li>
+          <li>Over the Skyline – Lila Monroe</li>
+          <li>Neon Gridlock – Neon Dawn</li>
+          <li>Lost (feat. Evolution) – Lynney Williamson</li>
+          <li>Summer Synth Vibes – Neonverse Radio</li>
+          <li>Neon Crush – Neon Dawn</li>
+          <li>Desires – Keshon Campbell</li>
+          <li>Lost Ally – Novelley</li>
+          <li>Spray U (Extended Mix) – XD:I</li>
+          <li>Baby You're a Big Star Now – Arwin Godwin</li>
+        </ul>
+      </section>
 
     </main>
   );
