@@ -63,20 +63,21 @@ export default function Submit() {
         </h2>
         <ul className="playlist-list">
           <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
-          <li>Drowning Days – Martyrs</li>
-          <li>Stuntin on Em (193 YTC Mak) – Ilovemakonnen / YTC</li>
-          <li>Night Out Vibes – Neonverse Radio</li>
-          <li>Two Masters Two Relics – Neon Dawn</li>
-          <li>Hackers – White Bat Audio / Karl Casey</li>
-          <li>Over the Skyline – Lila Monroe</li>
-          <li>Neon Gridlock – Neon Dawn</li>
-          <li>Lost (feat. Evolution) – Lynney Williamson</li>
-          <li>Summer Synth Vibes – Neonverse Radio</li>
-          <li>Neon Crush – Neon Dawn</li>
-          <li>Desires – Keshon Campbell</li>
-          <li>Lost Ally – Novelley</li>
-          <li>Spray U (Extended Mix) – XD:I</li>
-          <li>Baby You're a Big Star Now – Arwin Godwin</li>
+    <li>Drowning Days – Martyrs</li>
+    <li>Stuntin on Em (193 YTC Mak) – Ilovemakonnen / YTC</li>
+    <li>Two Masters Two Relics – Neon Dawn</li>
+    <li>Neon Gridlock – Neon Dawn</li>
+    <li>Baby You're a Big Star Now – Arwin Godwin</li>
+    <li>Hackers – White Bat Audio / Karl Casey</li>
+    <li>Over the Skyline – Lila Monroe</li>
+    <li>Lost (feat. Evolution) – Lynney Williamson</li>
+    <li>Summer Synth Vibes – Neonverse Radio</li>
+    <li>Neon Crush – Neon Dawn</li>
+    <li>Desires – Keshon Campbell</li>
+    <li>Spray U (Extended Mix) – XD:I</li>
+    <li>Lost Ally – Novelley</li>
+    <li>Woosah Radio Edit – Bocha</li>
+    <li>Neon Afro Beats – Neon Dawn</li>
         </ul>
       </section>
 
