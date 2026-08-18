@@ -22,10 +22,13 @@ export default function Submit() {
           <li>Dissociate – Meeka</li>
           <li>Neondawn – Neon Dawn</li>
           <li>Morning ASMR – Neonverse Radio</li>
-          <li>Neon Dawn – Neon Dawn</li>
+          <li>Neon Crush – Neon Dawn</li>
+          <li>Martyrs Church Street Ep – Martyrs</li>
           <li>Summer Synth Vibes – Neonverse Radio</li>
           <li>Control – Ilovemakonnen / YTC</li>
+          <li>Neon Afro Beats – Neon Dawn</li>
           <li>Hackers – White Bat Audio / Karl Casey</li>
+          <li>Baby Youre A Big Star Now – Arwin Goldwin</li>
         </ul>
       </section>
 
@@ -35,19 +38,21 @@ export default function Submit() {
           High Score Highway (12:00 PM – 6:00 PM)
         </h2>
         <ul className="playlist-list">
-          <li>Future City Glow – Neonverse Radio</li>
           <li>Summer Synth Vibes – Neonverse Radio</li>
           <li>Twist the Cap (Church Street Ep.) – Martyrs</li>
-          <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
-          <li>Hackers – White Bat Audio / Karl Casey</li>
-          <li>Neon Gridlock – Neon Dawn</li>
-          <li>Over the Skyline – Lila Monroe</li>
-          <li>Time and Space – Novelley</li>
-          <li>Afternoon Rush – Neonverse Radio</li>
-          <li>Two Masters Two Relics – Neon Dawn</li>
-          <li>Control – Ilovemakonnen / YTC</li>
-          <li>Spray U – XD:I</li>
           <li>Baby You're a Big Star Now – Arwin Godwin</li>
+          <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
+          <li>Future City Glows – Neonverse Radio</li>
+          <li>Neon Gridlock – Neon Dawn</li>
+          <li>Hackers – White Bat Audio / Karl Casey</li>
+          <li>Time and Space – Novelley</li>
+          <li>Two Masters Two Relics – Neon Dawn</li>
+          <li>Over the Skyline – Lila Monroe</li>
+          <li>Spray U – XD:I</li>
+          <li>Control – Ilovemakonnen / YTC</li>
+          <li>Afternoon Rush – Neonverse Radio</li>
+          <li>Lost (feat. Evolution) – Lynney Williamson</li>
+          <li>Woosah Radio Edit – Bocha</li>
         </ul>
       </section>
 
