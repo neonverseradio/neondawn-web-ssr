@@ -178,6 +178,9 @@ This month, we feature Martyrs <br />
   Their latest work drifts like a midnight transmission constantly evolving — 
   patient, cinematic,energetic and built for solitary drives 
   beneath rain‑washed streetlights and fading city reflections.
+  <br />
+  “Resonates beautifully…one of the most distinctive releases of the summer”
+
 </h4>
 
 
