@@ -24,7 +24,7 @@ export default function Submit() {
           <li>Morning ASMR – Neonverse Radio</li>
           <li>Neon Crush – Neon Dawn</li>
           <li>Martyrs Church Street Ep – Martyrs</li>
-          <li>Nia Chailin –  ALIEN GODDESS [Remix 01]</li>
+          <li>Time to Shine – Niya</li>
           <li>Control – Ilovemakonnen / YTC</li>
           <li>Neon Afro Beats – Neon Dawn</li>
           <li>Hackers – White Bat Audio / Karl Casey</li>
@@ -38,7 +38,7 @@ export default function Submit() {
           High Score Highway (12:00 PM – 6:00 PM)
         </h2>
         <ul className="playlist-list">
-          <li>Nia Chailin –  ALIEN GODDESS [Remix 01]</li>
+          <li>Time to Shine – Niya</li>
           <li>Twist the Cap (Church Street Ep.) – Martyrs</li>
           <li>Baby You're a Big Star Now – Arwin Godwin</li>
           <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
@@ -77,7 +77,8 @@ export default function Submit() {
     <li>Spray U (Extended Mix) – XD:I</li>
     <li>Lost Ally – Novelley</li>
     <li>Woosah Radio Edit – Bocha</li>
-    <li>Neon Afro Beats – Neon Dawn</li>
+    <li>Time to Shine – Niya</li>
+
         </ul>
       </section>
 

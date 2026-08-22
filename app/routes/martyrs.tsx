@@ -125,10 +125,12 @@ const image =
             
 
 This month, we feature Martyrs <br />
- a duo whose long-running creative partnership began in a high-school band 
- in Merthyr Tydfil  and continues today from their home on the Kentish coast. 
- Their steady DIY approach and evolving catalog have built a growing steady community 
- that follows each new chapter of their work. 
+ A Welsh DIY duo whose creative partnership began in a high-school band at Cyfarthfa Castle in Merthyr Tydfil 
+ and was reignited many years later. From their attic studio overlooking the Kentish coast, 
+ Jon Howells and Michael Hall have built an extraordinary, genre-agnostic catalog — 
+ moving freely through synthwave, post-rock, indie pop, metal, house, Detroit techno, sound collage and beyond. 
+ Eight EPs into a planned run of ten, MARTYRS remain proudly difficult to classify. 
+ They simply call it pop music.
  <br /> 
           </p>
 <h2>
@@ -139,31 +141,34 @@ This month, we feature Martyrs <br />
     alt="Martyrs — Artist of the Month"
      /> 
           <p>
-           When Church Street first entered NeonVerse rotation, 
-           it immediately stood apart from the noise — 
-           not through volume or spectacle, but through atmosphere, 
-           emotional detail, and a sense of distance that lingered long after the track ended.
+           Following the acclaimed Church Street EP, MARTYRS take another sharp turn with Last Summer — 
+           shimmering guitars, sunset synths, huge hooks and electronic energy wrapped around themes of memory, 
+           lost love, solitude and those places that never quite feel the same once the people are gone.
 
-          Now, MARTYRS return with Twist The Cap, a late-night ballad 
-          built on delicate instrumentation and sweeping synth textures 
-          that feel perfectly suited for solitary drives beneath 
-          rain-soaked streetlights and fading city reflections after midnight. 
-<br /><br />
-            There’s a quiet cinematic quality running through their work — 
-            songs that unfold slowly, patiently, revealing emotional weight 
-            through texture, memory, and space rather than excess. 
-            In a musical landscape often dominated by immediacy, 
-            MARTYRS lean into atmosphere and restraint, allowing each arrangement room to breathe. 
+From the 140 BPM Detroit-techno pulse and '80s New Wave glow of Drowning Days, 
+to the euphoric Hyacinth, lo-fi spoken-word of Counting Summers and visceral techno of Sunburn Under Blue Linen, 
+MARTYRS move freely between genres without losing their unmistakably melancholic heart.
+<br />
+<img
+    src="/artists/martyrs/martyrs8.png"
+    alt="Martyrs — Artist of the Month"
+     /> 
+<br />
 
-            Both Church Street and Twist The Cap now sit naturally 
-            within the NeonVerse Radio rotation — immersive, melancholic 
-            transmissions carried somewhere between underground alternative, 
-            emotional synth-pop, and late-night electronic drift.
-
-            For listeners searching for music that feels reflective, human, 
-            and timeless beneath neon skies, MARTYRS are a signal worth holding onto.” 
-          </p>
-
+            That unpredictability is exactly what makes them MARTYRS. Jon’s polished, 
+            progressive production collides with Michael’s literary, often darkly humorous writing
+            creating music that feels nostalgic yet futuristic, intimate yet enormous, 
+            and never particularly interested in fitting neatly into a box.
+          </p> <br />
+          <img
+    src="/artists/martyrs/martyrs9.jpg"
+    alt="Martyrs — Artist of the Month"
+     /> 
+     <br />
+<p>
+  Algorithm-friendly? Absolutely not.<br />
+Perfect for independent radio and listeners? Absolutely!
+</p>
 
           <h2>
             NeonVerse Review
@@ -171,15 +176,14 @@ This month, we feature Martyrs <br />
 
 {/* ============================ NEON CSS ============================================== */}
          <h4 className="neon-review-mini">
-  “Martyrs continue to carve out their own quiet corner of the NeonVerse signal, 
-  crafting music that pulls you inward through texture, restraint, and emotional distance. 
-  
+  “Their recent work drifts effortlessly between cinematic melancholy and bursts of electronic energy 
+  shifting from reflective, atmospheric moments into driving rhythms, 
+  shimmering synths and unexpected intensity while keeping that unmistakable MARTYRS character throughout."
   <br />
-  Their latest work drifts like a midnight transmission constantly evolving — 
-  patient, cinematic,energetic and built for solitary drives 
-  beneath rain‑washed streetlights and fading city reflections.
   <br />
-  “Resonates beautifully…one of the most distinctive releases of the summer”
+   “Resonates beautifully…one of the most distinctive releases of the summer”
+  <br />
+ 
 
 </h4>
 
