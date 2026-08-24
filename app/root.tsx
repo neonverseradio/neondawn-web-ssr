@@ -6,7 +6,7 @@ import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
 
 import ArtistMarquee from "./components/artistmarquee";
-import Edge from "./components/edge";
+// import Edge from "./components/edge";
 
 
 // -----------------------------------------------------------------------------
@@ -227,10 +227,10 @@ function Layout({ children, nowPlaying }) {
       {/* ---------------------------------------------------------------------
           GLOBAL EDGE MENU SYSTEM
          --------------------------------------------------------------------- */}
-
+{/*
       <Edge />
 
-
+ */}
       {/* ---------------------------------------------------------------------
           GLOBAL HEADER
          --------------------------------------------------------------------- */}

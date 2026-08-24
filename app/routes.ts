@@ -34,6 +34,12 @@ export default [
       // Kurt artist page
      route("kurt", "routes/kurt.tsx"),
 
+        // Arlin artist page
+     route("arlin", "routes/arlin.tsx"),
+
+      // XD:I artist page
+     route("xdi", "routes/xdi.tsx"),
+
       // SUBMIT artist page
      route("submit", "routes/submit.tsx"),
 

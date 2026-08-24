@@ -56,6 +56,18 @@ const artists = [
     image: "/header/kurt2.png",
     link: "/kurt",
   },
+   {
+    name: "Arlin",
+    caption: "Baby You're a Big Star Now",
+    image: "/header/arlin.jpg",
+    link: "/arlin",
+  },
+  {
+    name: "XD:I",
+    caption: "Spray U",
+    image: "/header/1.png",
+    link: "/xdi",
+  },
 ];
 
 function ArtistTrack() {

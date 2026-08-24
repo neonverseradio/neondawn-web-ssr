@@ -52,4 +52,14 @@ export const ARTISTS: ArtistMeta[] = [
     slug: "kurt",
     img: "/artists/kurt/kurt2.png",
   },
+   {
+    name: "Arlin",
+    slug: "arlin",
+    img: "/artists/arlin/arlin.jpg",
+  },
+   {
+    name: "XD:I",
+    slug: "xdi",
+    img: "/artists/xdi/1.png",
+  },
 ];

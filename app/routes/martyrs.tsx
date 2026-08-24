@@ -82,7 +82,29 @@ const image =
           ♫ Drowning Days 
         </a>
 <div class="v-space"></div>
+<div style={{ maxWidth: "300px", width: "100%", margin: "0 auto" }}>
+  <div style={{ position: "relative", paddingBottom: "177.78%", height: 0, overflow: "hidden" }}>
+    <iframe
+      src="https://www.youtube.com/embed/MG-aqp5cqvg"
+      title="Martyrs — NeonVerse Feature"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        borderRadius: "8px"
+      }}
+    ></iframe>
+  </div>
+</div>
+<br />
 
+<div className="nav-wrapper">  {/* NEON BORDER */}
          <p className="seattle-tagline">
             Rain falls. Signals drift.
             The city hums beneath neon reflections.
@@ -104,7 +126,7 @@ const image =
             sounds, and late-night drive energy
             shaped by Seattle's skyline.
           </p>
-
+</div>
 {/* ============================ START OF LYNNEY REVIEW ============================================== */}
            <img
     src="/artists/martyrs/martyrs4.jpg"

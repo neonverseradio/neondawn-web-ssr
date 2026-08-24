@@ -151,6 +151,16 @@ export default function Artists() {
             <img src="/kurt2.png" alt="Kurt" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
             <p className="mt-2 text-xl text-cyan-300">Kurt ♫ When Angels Sing</p>
           </div>
+
+          <div className="flex flex-col items-center">
+            <img src="/arlin.jpg" alt="Arlin" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">Arlin ♫ Baby You're a Big Star Now</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="/1.png" alt="XD:I" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">XD:I ♫ Spray U</p>
+          </div>
 <br /> <br />
      <div className="transmission-block">
   <p>A new breed of Future City transmission is coming on air.</p>
