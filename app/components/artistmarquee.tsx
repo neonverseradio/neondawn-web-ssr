@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import "../styles/artistmarquee.css";
+import "../styles/aotm-marquee.css";
 
 const artists = [
   {
@@ -25,6 +26,7 @@ const artists = [
     caption: "White Bat Audio♫Hackers",
     image: "/header/karl.png",
     link: "/karl",
+    highlight: "aotm-marquee-highlight",
   },
   {
     name: "Ilovemakonnen - YTC",
@@ -77,7 +79,7 @@ function ArtistTrack() {
         <Link
           key={artist.link}
           to={artist.link}
-          className="artist-item"
+          className={`artist-item ${artist.highlight || ""}`}
         >
           <img
             src={artist.image}

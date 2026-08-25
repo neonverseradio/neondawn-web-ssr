@@ -1,0 +1,64 @@
+/* ==========================================================
+   NEONVERSE — AOTM MARQUEE
+   Gold visual treatment only
+   ========================================================== */
+
+.artist-item.aotm-marquee-highlight .artist-image {
+
+    border-color: #ffd700;
+
+    box-shadow:
+        0 0 8px rgba(255, 215, 0, .95),
+        0 0 18px rgba(255, 215, 0, .75),
+        0 0 30px rgba(255, 190, 0, .50),
+        0 0 42px rgba(255, 170, 0, .25);
+
+    animation: aotm-marquee-glow 2.8s ease-in-out infinite;
+}
+
+
+/* ==========================================================
+   GOLD BREATHING EFFECT
+   ========================================================== */
+
+@keyframes aotm-marquee-glow {
+
+    0%,
+    100% {
+
+        box-shadow:
+            0 0 7px rgba(255, 215, 0, .85),
+            0 0 15px rgba(255, 215, 0, .60),
+            0 0 25px rgba(255, 190, 0, .35),
+            0 0 36px rgba(255, 170, 0, .18);
+
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 10px rgba(255, 235, 100, 1),
+            0 0 21px rgba(255, 215, 0, .90),
+            0 0 34px rgba(255, 190, 0, .55),
+            0 0 48px rgba(255, 170, 0, .28);
+
+    }
+
+}
+
+
+/* ==========================================================
+   HOVER — KEEP GOLD
+   ========================================================== */
+
+.artist-item.aotm-marquee-highlight:hover .artist-image {
+
+    border-color: #ffe45c;
+
+    box-shadow:
+        0 0 12px #ffd700,
+        0 0 25px #ffd700,
+        0 0 42px #ffb700,
+        0 0 70px rgba(255, 170, 0, .75);
+
+}
