@@ -1,6 +1,7 @@
 import "./audio.css";
 import "./app.css";
 import "./seattle.css";
+import "./header2.css";
 
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
@@ -14,6 +15,8 @@ import ArtistMarquee from "./components/artistmarquee";
 // -----------------------------------------------------------------------------
 
 function NeonHeader({ nowPlaying }) {
+  const [aiOpen, setAiOpen] = useState(false);
+
   return (
     <header className="neon-header">
 
@@ -114,14 +117,14 @@ function NeonHeader({ nowPlaying }) {
           </Link>
 
           <Link to="/artists">
-            Artists
+            ♫ Artists ♫ 
           </Link>
 
           <Link to="/playlist">
             ♪PlayList♪
           </Link>
-
-          <Link to="/register">
+      
+                <Link to="/register">
             Register
           </Link>
 
@@ -133,6 +136,49 @@ function NeonHeader({ nowPlaying }) {
             Submit
           </Link>
 
+          {/* ---------------------------------------------------------------
+              AI LAB DROPDOWN
+             --------------------------------------------------------------- */}
+
+          <div
+            className="nav-dropdown"
+            onMouseEnter={() => setAiOpen(true)}
+            onMouseLeave={() => setAiOpen(false)}
+          >
+
+            <button
+              type="button"
+              className="nav-dropdown-button ai-lab-nav"
+              onClick={() => setAiOpen((open) => !open)}
+              aria-expanded={aiOpen}
+              aria-haspopup="true"
+            >
+              ⚡AI Lab⚡
+            </button>
+
+
+            {aiOpen && (
+              <div className="nav-submenu">
+
+                <Link
+                  to="/ai-artists"
+                  onClick={() => setAiOpen(false)}
+                >
+                  AI Artists
+                </Link>
+<br /> <br />
+                <Link
+                  to="/submit-ai"
+                  onClick={() => setAiOpen(false)}
+                > 
+                  Submit AI
+                </Link>
+
+              </div>
+            )}
+
+          </div>
+
         </nav>
 
       </div>
@@ -141,7 +187,7 @@ function NeonHeader({ nowPlaying }) {
       {/* ---------------------------------------------------------------------
           START OF MARQUEE HEADER
          --------------------------------------------------------------------- */}
-
+<br /><br /><br />
       <ArtistMarquee />
 
       {/* ---------------------------------------------------------------------

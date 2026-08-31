@@ -29,6 +29,7 @@ export default function Submit() {
           <li>Neon Afro Beats – Neon Dawn</li>
           <li>Hackers – White Bat Audio / Karl Casey</li>
           <li>Baby Youre A Big Star Now – Arwin Goldwin</li>
+          <li>Without You – The Octopus Division</li>
         </ul>
       </section>
 
@@ -53,6 +54,7 @@ export default function Submit() {
           <li>Afternoon Rush – Neonverse Radio</li>
           <li>Lost (feat. Evolution) – Lynney Williamson</li>
           <li>Woosah Radio Edit – Bocha</li>
+           <li>Without You – The Octopus Division</li>
         </ul>
       </section>
 
@@ -78,6 +80,7 @@ export default function Submit() {
     <li>Lost Ally – Novelley</li>
     <li>Woosah Radio Edit – Bocha</li>
     <li>Time to Shine – Niya</li>
+     <li>Without You – The Octopus Division</li>
 
         </ul>
       </section>

@@ -52,4 +52,12 @@ export default [
 // SUBMIT artist page
      route("about", "routes/about.tsx"),
 
+     // =====================================
+// AI LAB
+// =====================================
+
+// AI Artists page
+route("ai-artists", "routes/ai_artists/aipage.tsx"),
+route("submit-ai", "routes/ai_artists/submit-ai.tsx"),
+
 ] satisfies RouteConfig;
