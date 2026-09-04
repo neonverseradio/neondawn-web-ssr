@@ -40,6 +40,9 @@ export default [
       // XD:I artist page
      route("xdi", "routes/xdi.tsx"),
 
+     // NIYA artist page
+     route("niya", "routes/niya.tsx"),
+
       // SUBMIT artist page
      route("submit", "routes/submit.tsx"),
 
@@ -59,5 +62,15 @@ export default [
 // AI Artists page
 route("ai-artists", "routes/ai_artists/aipage.tsx"),
 route("submit-ai", "routes/ai_artists/submit-ai.tsx"),
+
+// =====================================
+// DJ'S PAGE
+// =====================================
+
+route("djpage", "routes/djpage/dj.tsx"),
+route("djpage/resident", "routes/djpage/resident.tsx"),
+route("djpage/welcome", "routes/djpage/welcome.tsx"),
+route("djpage/schedule", "routes/djpage/schedule.tsx"),
+
 
 ] satisfies RouteConfig;

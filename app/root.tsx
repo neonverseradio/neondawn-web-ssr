@@ -16,6 +16,7 @@ import ArtistMarquee from "./components/artistmarquee";
 
 function NeonHeader({ nowPlaying }) {
   const [aiOpen, setAiOpen] = useState(false);
+   const [djOpen, setDjOpen] = useState(false);
 
   return (
     <header className="neon-header">
@@ -105,83 +106,150 @@ function NeonHeader({ nowPlaying }) {
 
 
       {/* ---------------------------------------------------------------------
-          GLOBAL NAVIGATION
-         --------------------------------------------------------------------- */}
+    GLOBAL NAVIGATION
+   --------------------------------------------------------------------- */}
 
-      <div className="nav-wrapper">
+<div className="nav-wrapper">
 
-        <nav className="neon-nav">
+  <nav className="neon-nav">
 
-          <Link to="/">
-            Home
-          </Link>
+    <Link to="/">
+      Home
+    </Link>
 
-          <Link to="/artists">
-            ♫ Artists ♫ 
-          </Link>
+    <Link to="/artists">
+      ♫ Artists ♫
+    </Link>
 
-          <Link to="/playlist">
-            ♪PlayList♪
-          </Link>
-      
-                <Link to="/register">
-            Register
-          </Link>
+    <Link to="/playlist">
+      ♪PlayList♪
+    </Link>
 
-          <Link to="/about">
-            About
-          </Link>
 
-          <Link to="/submit">
-            Submit
-          </Link>
+    {/* ---------------------------------------------------------------
+        DJ DROPDOWN
+       --------------------------------------------------------------- */}
 
-          {/* ---------------------------------------------------------------
-              AI LAB DROPDOWN
-             --------------------------------------------------------------- */}
+    <div
+      className="nav-dropdown"
+      onMouseEnter={() => setDjOpen(true)}
+      onMouseLeave={() => setDjOpen(false)}
+    >
 
-          <div
-            className="nav-dropdown"
-            onMouseEnter={() => setAiOpen(true)}
-            onMouseLeave={() => setAiOpen(false)}
+      <button
+        type="button"
+        className="nav-dropdown-button dj-nav"
+        onClick={() => setDjOpen((open) => !open)}
+        aria-expanded={djOpen}
+        aria-haspopup="true"
+      >
+        DJs
+      </button>
+
+      {djOpen && (
+        <div className="nav-submenu">
+
+          <Link
+            to="/djpage/resident"
+            onClick={() => setDjOpen(false)}
           >
+            Resident DJs
+          </Link>
 
-            <button
-              type="button"
-              className="nav-dropdown-button ai-lab-nav"
-              onClick={() => setAiOpen((open) => !open)}
-              aria-expanded={aiOpen}
-              aria-haspopup="true"
-            >
-              ⚡AI Lab⚡
-            </button>
+          <br /><br />
+
+          <Link
+            to="/djpage/welcome"
+            onClick={() => setDjOpen(false)}
+          >
+            DJ Welcome Guide
+          </Link>
+
+          <br /><br />
+
+          <Link
+            to="/djpage/schedule"
+            onClick={() => setDjOpen(false)}
+          >
+            Schedule
+          </Link>
+
+          <br /><br />
+
+          <Link
+            to="/djpage"
+            onClick={() => setDjOpen(false)}
+          >
+            DJ Home
+          </Link>
+
+        </div>
+      )}
+
+    </div>
 
 
-            {aiOpen && (
-              <div className="nav-submenu">
+    <Link to="/register">
+      Register
+    </Link>
 
-                <Link
-                  to="/ai-artists"
-                  onClick={() => setAiOpen(false)}
-                >
-                  AI Artists
-                </Link>
-<br /> <br />
-                <Link
-                  to="/submit-ai"
-                  onClick={() => setAiOpen(false)}
-                > 
-                  Submit AI
-                </Link>
+    <Link to="/about">
+      About
+    </Link>
 
-              </div>
-            )}
+    <Link to="/submit">
+      Submit
+    </Link>
 
-          </div>
 
-        </nav>
+    {/* ---------------------------------------------------------------
+        AI LAB DROPDOWN
+       --------------------------------------------------------------- */}
 
-      </div>
+    <div
+      className="nav-dropdown"
+      onMouseEnter={() => setAiOpen(true)}
+      onMouseLeave={() => setAiOpen(false)}
+    >
+
+      <button
+        type="button"
+        className="nav-dropdown-button ai-lab-nav"
+        onClick={() => setAiOpen((open) => !open)}
+        aria-expanded={aiOpen}
+        aria-haspopup="true"
+      >
+        ⚡AI Lab⚡
+      </button>
+
+
+      {aiOpen && (
+        <div className="nav-submenu">
+
+          <Link
+            to="/ai-artists"
+            onClick={() => setAiOpen(false)}
+          >
+            AI Artists
+          </Link>
+
+          <br /><br />
+
+          <Link
+            to="/submit-ai"
+            onClick={() => setAiOpen(false)}
+          >
+            Submit AI
+          </Link>
+
+        </div>
+      )}
+
+    </div>
+
+  </nav>
+
+</div>
 
 
       {/* ---------------------------------------------------------------------

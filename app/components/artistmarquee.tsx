@@ -70,6 +70,13 @@ const artists = [
     image: "/header/1.png",
     link: "/xdi",
   },
+{
+    name: "NIYA",
+    caption: "Alien Goddess",
+    image: "/header/niya1.jpg",
+    link: "/niya",
+  },
+
 ];
 
 function ArtistTrack() {

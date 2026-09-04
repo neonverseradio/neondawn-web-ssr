@@ -62,4 +62,9 @@ export const ARTISTS: ArtistMeta[] = [
     slug: "xdi",
     img: "/artists/xdi/1.png",
   },
+  {
+    name: "NIYA",
+    slug: "niya",
+    img: "/artists/niya/niya1.jpg",
+  },
 ];
