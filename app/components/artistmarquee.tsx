@@ -76,7 +76,12 @@ const artists = [
     image: "/header/niya1.jpg",
     link: "/niya",
   },
-
+{
+    name: "Octopus Division",
+    caption: "Without You",
+    image: "/header/matthew.png",
+    link: "/octopus",
+  },
 ];
 
 function ArtistTrack() {

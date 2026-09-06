@@ -67,4 +67,12 @@ export const ARTISTS: ArtistMeta[] = [
     slug: "niya",
     img: "/artists/niya/niya1.jpg",
   },
+  {
+    name: "The Octopus Division",
+    slug: "octopus",
+    img: "/artists/octopus/matthew.png",
+  },
+
+
+
 ];

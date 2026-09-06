@@ -43,6 +43,9 @@ export default [
      // NIYA artist page
      route("niya", "routes/niya.tsx"),
 
+      // OCTOPUS DIVISION artist page
+     route("octopus", "routes/octopus.tsx"),
+
       // SUBMIT artist page
      route("submit", "routes/submit.tsx"),
 

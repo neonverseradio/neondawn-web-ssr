@@ -164,7 +164,12 @@ export default function Artists() {
 
            <div className="flex flex-col items-center">
             <img src="/niya1.jpg" alt="NIYA" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
-            <p className="mt-2 text-xl text-cyan-300">XD:I ♫ Spray U</p>
+            <p className="mt-2 text-xl text-cyan-300">Niya ♫ Alien Goddess</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="/matthew.png" alt="Octopus Division" className="w-48 h-48 rounded-lg border border-cyan-400 shadow-lg" />
+            <p className="mt-2 text-xl text-cyan-300">The Octopus Division ♫ Without You U</p>
           </div>
 <br /> <br />
      <div className="transmission-block">
