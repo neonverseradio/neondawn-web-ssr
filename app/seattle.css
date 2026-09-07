@@ -343,7 +343,7 @@
 
   animation: neonPulseMini 4s ease-in-out infinite;
 }
-
+ /*
 @keyframes neonPulseMini {
   0%, 100% {
     opacity: 0.85;
@@ -363,7 +363,7 @@
       0 0 2px #ff7a00,
       0 0 4px #ff7a00;
   }
-}
+} */
 
 /* =====================================
    Phones

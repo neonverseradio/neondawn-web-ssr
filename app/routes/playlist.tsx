@@ -9,6 +9,7 @@ export default function Submit() {
     <main className="flex flex-col items-center justify-center px-6 py-20 text-center text-neutral-200">
 
       {/* Dawn Boot Sequence */}
+       <h4 className="neon-review-mini">
       <section className="w-full max-w-3xl mb-16">
         <h2 className="text-3xl font-bold neon-text mb-2">
           Dawn Boot Sequence (6:00 AM – 12:00 PM)
@@ -26,14 +27,15 @@ export default function Submit() {
           <li>Martyrs Church Street Ep – Martyrs</li>
           <li>Time to Shine – Niya</li>
           <li>Control – Ilovemakonnen / YTC</li>
-          <li>Neon Afro Beats – Neon Dawn</li>
+          <li>Bunnies in the Clover – Luna's Wereld</li>
           <li>Hackers – White Bat Audio / Karl Casey</li>
           <li>Baby Youre A Big Star Now – Arwin Goldwin</li>
           <li>Without You – The Octopus Division</li>
         </ul>
       </section>
-
+</h4>
       {/* High Score Highway */}
+        <h4 className="neon-review-mini">
       <section className="w-full max-w-3xl mb-16">
         <h2 className="text-3xl font-bold neon-text mb-2">
           High Score Highway (12:00 PM – 6:00 PM)
@@ -56,9 +58,11 @@ export default function Submit() {
           <li>Woosah Radio Edit – Bocha</li>
            <li>Without You – The Octopus Division</li>
         </ul>
+      
       </section>
-
+  </h4>
       {/* Night Drive Chill Wave */}
+     <h4 className="neon-review-mini">
       <section className="w-full max-w-3xl mb-16">
         <h2 className="text-3xl font-bold neon-text mb-2">
           Night Drive Chill Wave (6:00 PM – 12:00 AM)
@@ -84,7 +88,7 @@ export default function Submit() {
 
         </ul>
       </section>
-
+</h4>
     </main>
   );
 }
