@@ -261,7 +261,13 @@ function NeonHeader({ nowPlaying }) {
       {/* ---------------------------------------------------------------------
           END OF MARQUEE HEADER
          --------------------------------------------------------------------- */}
-
+<br /> 
+<img
+    src="/artists/martyrs/martyrs-interview.png"
+    alt="Martyrs — Artist of the Month"
+    className="enter-button"
+   
+  /> 
     </header>
   );
 }
