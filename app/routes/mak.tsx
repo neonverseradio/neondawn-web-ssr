@@ -15,7 +15,11 @@ const image =
 
       <section className="seattle-panel">
 
-
+ <section className="seattle-title">
+<h2 className="enter-button">
+   AOTM Spotlight Feature
+</h2>
+</section> <br /> <br />
         <h2 className="seattle-title2">
           Ilovemakonnen - YTC 
         </h2>
@@ -63,26 +67,44 @@ const image =
         </a>
 <div class="v-space"></div>
 
+{/* START OF YOUTUBE EMBED FRAME */}
+<div style={{ maxWidth: "300px", width: "100%", margin: "0 auto" }}>
+  <div style={{ position: "relative", paddingBottom: "177.78%", height: 0, overflow: "hidden" }}>
+    <iframe
+      src="https://www.youtube.com/embed/wwMwh45pA_c"
+      title="Shine live in San Diego"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        borderRadius: "8px"
+      }}
+    ></iframe>
+  </div>
+</div>
+<br />
+{/* END OF YOUTUBE EMBED FRAME */}
+
          <p className="seattle-tagline">
-            Rain falls. Signals drift.
-            The city hums beneath neon reflections.
+            Neon lights shimmer above Atlanta's endless midnight highways 
+            as warm air carries distant basslines through a city built on reinvention and possibility.
           </p>
 
          <p className="seattle-tagline">
-            Welcome to the Seattle Signal —
-            a darker atmospheric channel of
-            NeonVerse Radio, broadcasting from
-            the shadow of the Space Needle and
-            the neon-washed streets of the
-            Pacific Northwest.
+            Tonight, NeonVerse tunes into the world of ILOVEMAKONNEN — where futuristic melodies, after-hours energy, 
+            and the electric spirit of Atlanta collide beneath a skyline glowing with tomorrow.
           </p>
 
 
           <p className="seattle-tagline">
-            Expect deep synthwave, ambient
-            electronic textures, cinematic indie
-            sounds, and late-night drive energy
-            shaped by Seattle's skyline.
+            Expect deep synthwave, ambient electronic textures, 
+            cinematic indie sounds, and late-night drive energy shaped by the pulse of Atlanta after dark.
           </p>
 
 {/* ============================ START OF LYNNEY REVIEW ============================================== */}
@@ -97,7 +119,7 @@ const image =
           
           
            <h2 className="enter-button">
-   COMING SOON - Ilovemakonnen
+   Artist of The Month - Ilovemakonnen
 </h2>
 
 
@@ -155,7 +177,7 @@ and a history of collaborations that stretch deep into Toronto’s underground s
 
         <a
        
-  href="https://soundcloud.com/yellowtrashcann"
+  href="https://soundcloud.com/ilovemakonnen-music"
   target="_blank"
   rel="noreferrer"
   className="enter-button"

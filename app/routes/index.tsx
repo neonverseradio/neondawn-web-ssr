@@ -1,10 +1,12 @@
+
+import { Link } from "react-router";
 import "../seattle.css";
 import "../app.css";
 
-{/* =========================== START OF SEATTLE ================================== */}
-export default function Lynney() {
-  const image =
-    "/artists/lynney/lynney1.jpg";
+{/* =========================== START OF THE JSX BODY ================================== */}
+export default function Meeka() {     
+const image =
+    "/artists/mak/ilovemakonnen.png";
 
 
   return (
@@ -12,40 +14,39 @@ export default function Lynney() {
     <main className="seattle-page">
 
       <section className="seattle-panel">
-        <section className="seattle-title">
+
+ <section className="seattle-title">
 <h2 className="enter-button">
    AOTM Spotlight Feature
 </h2>
-</section>
-{/* CSS SEATTLE PANEL - SEATTLE.CSS 
-        <h1 className="seattle-title">
-          Seattle Signal
-        </h1>
-         */}
+</section> <br /> <br />
+        <h2 className="seattle-title2">
+          Ilovemakonnen - YTC 
+        </h2>
 
-{/* CSS SEATTLE TAGLINE - SEATTLE.CSS 
+
         <p className="seattle-tagline">
           The Sound of Future City
           <br />
           Defining Neon Vibes. 24/7.
         </p>
- */}
 
-        <p className="seattle-tagline">
-          NeonVerse Radio – Seattle Transmission
+
+        <p>
+          NeonVerse Radio – West Coast Transmission
         </p>
 
 {/* START OF LYNNEY IMAGE */}
 
         <img
-    src="/artists/karl/wba1.jpg"
-    alt="Karl — Artist of the Month"
+    src="/artists/mak/ilovemakonnen.png"
+    alt="Ilovemakonnen — Artist of the Month"
     className="aotm-img"
   /> 
   <br /> <br />
   <img
-    src="/artists/karl/hacker.png"
-    alt="karl — Artist of the Month"
+    src="/artists/mak/mak4.png"
+    alt="Ilovemakonnen — Artist of the Month"
    
   /> 
 {/* END OF LYNNEY IMAGE */}
@@ -54,136 +55,129 @@ export default function Lynney() {
 
 
           <h2 className="enter-button">
-   Artist of the Month - Karl - WBA
-</h2>
-<br />
-
-<a
-          href="https://www.youtube.com/watch?v=NZ4Of3lID84&list=RDNZ4Of3lID84&start_radio=1"
+   Ilovemakonnen
+</h2><br />
+ <a
+          href="https://open.spotify.com/track/5gokFSKfWU1p4SJaG2IWNZ?autoplay_ok=1"
           target="_blank"
           rel="noreferrer"
-          className="seattle-button2"
+          className="seattle-button"
         >
-          ♫ Hacker
+          ♫ Control
         </a>
-{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
 <div class="v-space"></div>
-{/*
-          <p>
-            Rain falls. Signals drift.
-            The city hums beneath neon reflections.
+
+{/* START OF YOUTUBE EMBED FRAME */}
+<div style={{ maxWidth: "300px", width: "100%", margin: "0 auto" }}>
+  <div style={{ position: "relative", paddingBottom: "177.78%", height: 0, overflow: "hidden" }}>
+    <iframe
+      src="https://www.youtube.com/embed/wwMwh45pA_c"
+      title="Shine live in San Diego"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        borderRadius: "8px"
+      }}
+    ></iframe>
+  </div>
+</div>
+<br />
+{/* END OF YOUTUBE EMBED FRAME */}
+
+         <p className="seattle-tagline">
+            Neon lights shimmer above Atlanta's endless midnight highways 
+            as warm air carries distant basslines through a city built on reinvention and possibility.
           </p>
 
-          <p>
-            Welcome to the Seattle Signal —
-            a darker atmospheric channel of
-            NeonVerse Radio, broadcasting from
-            the shadow of the Space Needle and
-            the neon-washed streets of the
-            Pacific Northwest.
+         <p className="seattle-tagline">
+            Tonight, NeonVerse tunes into the world of ILOVEMAKONNEN — where futuristic melodies, after-hours energy, 
+            and the electric spirit of Atlanta collide beneath a skyline glowing with tomorrow.
           </p>
 
 
-          <p>
-            Expect deep synthwave, ambient
-            electronic textures, cinematic indie
-            sounds, and late-night drive energy
-            shaped by Seattle's skyline.
+          <p className="seattle-tagline">
+            Expect deep synthwave, ambient electronic textures, 
+            cinematic indie sounds, and late-night drive energy shaped by the pulse of Atlanta after dark.
           </p>
-*/}
- <div class="neon-border">        
 
-Karl Casey — the mind behind White Bat Audio — stands as one of the most influential forces in modern synthwave. 
-For over 15 years, he’s carved out a sonic universe where retro horror, sci‑fi atmospheres, 
-and cyberpunk tension collide with razor‑sharp production and unmistakable guitar-driven energy. 
-His work has become a staple for creators, filmmakers, game developers, and synthwave fans worldwide.
- 
-          </div> <br /> 
 {/* ============================ START OF LYNNEY REVIEW ============================================== */}
            <img
-    src="/artists/karl/wba4.jpg"
-    alt="Karl — Artist of the Month"
+    src="/artists/mak/album1.png"
+    alt="Ilovemakonnen — Artist of the Month"
      />   <br /> 
-      <img
-    src="/artists/karl/wba2.jpg"
-    alt="Karl — Artist of the Month"
+    <img
+    src="/artists/mak/ytc2.png"
+    alt="Ilovemakonnen — Artist of the Month"
      />  
-    <br />
           
           
            <h2 className="enter-button">
-   Karl Transmission
-   </h2> <br />
- <img
-    src="/artists/karl/wba5.png"
-    alt="Karl — Artist of the Month"
-     />  
-  <div class="neon-border">
-            Karl’s catalog is a masterclass in mood-building. 
-            His tracks move like scenes from neon‑lit thrillers — pulsing basslines, dystopian pads, 
-            and riffs that feel pulled straight from forgotten VHS nightmares. <br />
-            Whether it’s retro horror, sci‑fi ambience, or dark cyberpunk synthwave, 
-            Karl’s music doesn’t just accompany visuals — it creates them.
-<br />
-    Cinematic synthwave — atmospheric, brooding, immersive
+   Artist of The Month - Ilovemakonnen
+</h2>
 
-    Thrash/death metal riffs — aggressive, high‑octane, unmistakably Karl
 
-    Hybrid soundtracks — perfect for creators who need tension, adrenaline, or retro futurism
-          </div> 
-{/*
           <p>
             
 
-Lynney is a Glasgow‑born singer‑songwriter 
-blending synthwave nostalgia with raw emotional storytelling, 
-crafting music that feels intimate, cinematic, and neon‑lit.
-
-Her latest single “Lost” — written by Lynney Williamson and 
-shaped through Evolution’s vocal production - dives into 
-the darker side of synthwave with haunting melodies 
-and pulsing retro tension. An advocate for neurodivergent creatives, 
-she creates music that feels personal yet universal, 
-a glowing soundtrack for anyone navigating the dark with hope.
+This month, we feature Ilovemakonnen feat YTC - Yellow Trash Can <br />
+ILoveMakonnen returns to the NeonVerse skyline with the weight of a Grammy nomination behind him — 
+a rare badge in the alt‑internet world — 
+and a history of collaborations that stretch deep into Toronto’s underground scene. 
  <br /> 
-          </p>*/}
-          
+          </p>
 <h2>
- Out now: Karl's songs are officially live on all streaming services! 
+ Out now: Ilovemakonnen's - YTC songs are officially live on all streaming services! 
 </h2>
 <img
-    src="/artists/karl/karl.png"
-    alt="Karl — Artist of the Month"
+    src="/artists/mak/ytc3.png"
+    alt="Ilovemakonnen — Artist of the Month"
      /> 
-<br />
-     <img
-    src="/artists/karl/karl6.png"
-    alt="Karl — Artist of the Month"
-     /> 
-                   <h2>
+          <p>
+            His voice has moved through the city’s creative corridors, 
+            linking up with Toronto‑based singers and rappers who share his left‑field, genre‑bending energy. 
+            That cross‑border creative DNA shows up in every broadcast he sends our way, 
+            amplified by one of the most iconic moments of the 2010s: 
+<br /><br />
+            his breakout collaboration with Drake on “Tuesday,” 
+            a cultural flashpoint that became a global anthem 
+            and permanently stamped Makonnen’s name into Toronto’s musical history.
+          </p>
+
+
+          <h2>
             NeonVerse Review
           </h2>
 
 {/* ============================ NEON CSS ============================================== */}
          <h4 className="neon-review-mini">
-  "Karl Casey is a veteran producer and guitarist with over 15 years of experience, 
-  known for shaping the dark‑synth, retro‑horror, 
-  and cyberpunk sound under his project White Bat Audio.
+  “ILoveMakonnen surges through the NeonVerse skyline like a neon flare, 
+  a Grammy‑nominated voice whose legacy — from “Tuesday” 
+  to his Toronto collaborations — keeps reshaping the alt‑internet signal.   
+  
   <br />
-   He blends cinematic synthwave with thrash‑infused riffs, 
-  creating atmospheric music that’s become a go‑to soundtrack for creators, 
-  filmmakers, and game developers.
+  Powered by Yellow Trash Can’s dystopian production, 
+  his August broadcast hits with cinematic voltage, 
+  turning every transmission into a late‑night future‑city anthem.""
 </h4>
 
 
 
 
         </section>
+{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
+<div class="v-space"></div>
 
 
         <a
-        
-  href="https://whitebataudio.com/"
+       
+  href="https://soundcloud.com/ilovemakonnen-music"
   target="_blank"
   rel="noreferrer"
   className="enter-button"
@@ -195,7 +189,9 @@ a glowing soundtrack for anyone navigating the dark with hope.
 
 
       </section>
-
+{/* ============================ CSS REUSABLE VERTICAL SPACE ============================================== */}
+<br />
+<div class="v-space"></div>
 
     </main>
 

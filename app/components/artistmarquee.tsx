@@ -26,13 +26,14 @@ const artists = [
     caption: "White Bat Audio♫Hackers",
     image: "/header/karl.png",
     link: "/karl",
-    highlight: "aotm-marquee-highlight",
+    
   },
   {
     name: "Ilovemakonnen - YTC",
     caption: "Control",
     image: "/header/ilovemakonnen.png",
     link: "/mak",
+    highlight: "aotm-marquee-highlight",
   },
   {
     name: "YTC - Ilovemakonnen",
