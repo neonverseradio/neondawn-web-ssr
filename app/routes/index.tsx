@@ -33,7 +33,7 @@ const image =
 
 
         <p>
-          NeonVerse Radio – West Coast Transmission
+          NeonVerse Radio – Atlanta Peachtree Transmission
         </p>
 
 {/* START OF LYNNEY IMAGE */}
