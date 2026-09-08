@@ -585,3 +585,87 @@
   }
 
 }
+/* ==========================================================
+   PODCAST ART IMAGE
+   ========================================================== */
+
+.podcast-art-frame {
+  overflow: hidden;
+}
+
+.podcast-art-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+/* ==========================================================
+   PODCAST ARCHIVE SEARCH
+   ========================================================== */
+
+.podcast-search-section {
+  width: min(700px, calc(100% - 32px));
+  margin: 0 auto 28px;
+
+  text-align: center;
+}
+
+.podcast-search-label {
+  margin-bottom: 10px;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+
+  color: #59f7ff;
+}
+
+.podcast-search-input {
+  width: 100%;
+
+  padding: 14px 18px;
+
+  color: #ffffff;
+  background: rgba(5, 10, 20, 0.9);
+
+  border: 1px solid rgba(0, 255, 255, 0.55);
+  border-radius: 8px;
+
+  outline: none;
+
+  font: inherit;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.podcast-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.podcast-search-input:focus {
+  border-color: #00f5ff;
+
+  box-shadow:
+    0 0 10px rgba(0, 245, 255, 0.25);
+}
+
+
+/* ==========================================================
+   NO SEARCH RESULTS
+   ========================================================== */
+
+.podcast-no-results {
+  margin: 50px auto;
+  padding: 30px;
+
+  text-align: center;
+
+  color: #ff69d9;
+
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+}
