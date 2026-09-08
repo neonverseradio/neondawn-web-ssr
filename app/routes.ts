@@ -75,5 +75,11 @@ route("djpage/resident", "routes/djpage/resident.tsx"),
 route("djpage/welcome", "routes/djpage/welcome.tsx"),
 route("djpage/schedule", "routes/djpage/schedule.tsx"),
 
+// =====================================
+// PODCAST
+// =====================================
+route("podcast/artists-interview", "routes/podcast/artistsinterview.tsx"),
+route(  "podcast/station-programs","routes/podcast/stationprograms.tsx"),
+
 
 ] satisfies RouteConfig;

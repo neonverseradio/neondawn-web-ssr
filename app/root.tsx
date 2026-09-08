@@ -17,6 +17,7 @@ import ArtistMarquee from "./components/artistmarquee";
 function NeonHeader({ nowPlaying }) {
   const [aiOpen, setAiOpen] = useState(false);
    const [djOpen, setDjOpen] = useState(false);
+   const [podcastOpen, setPodcastOpen] = useState(false);
 
   return (
     <header className="neon-header">
@@ -143,7 +144,7 @@ function NeonHeader({ nowPlaying }) {
         aria-expanded={djOpen}
         aria-haspopup="true"
       >
-        DJs
+        🎧 DJs
       </button>
 
       {djOpen && (
@@ -187,6 +188,49 @@ function NeonHeader({ nowPlaying }) {
       )}
 
     </div>
+{/* ---------------------------------------------------------------
+    PODCAST DROPDOWN
+   --------------------------------------------------------------- */}
+
+<div
+  className="nav-dropdown"
+  onMouseEnter={() => setPodcastOpen(true)}
+  onMouseLeave={() => setPodcastOpen(false)}
+>
+
+  <button
+    type="button"
+    className="nav-dropdown-button podcast-nav"
+    onClick={() => setPodcastOpen((open) => !open)}
+    aria-expanded={podcastOpen}
+    aria-haspopup="true"
+  >
+    🎙 Podcasts
+  </button>
+
+  {podcastOpen && (
+    <div className="nav-submenu">
+
+      <Link
+        to="/podcast/artists-interview"
+        onClick={() => setPodcastOpen(false)}
+      >
+        Artist Interviews
+      </Link>
+
+      <br /><br />
+
+      <Link
+        to="/podcast/station-programs"
+        onClick={() => setPodcastOpen(false)}
+      >
+        Station Programs
+      </Link>
+
+    </div>
+  )}
+
+</div>
 
 
     <Link to="/register">
@@ -250,7 +294,7 @@ function NeonHeader({ nowPlaying }) {
   </nav>
 
 </div>
-
+{/* START OF PODCAST MENU */}
 
       {/* ---------------------------------------------------------------------
           START OF MARQUEE HEADER
