@@ -1,13 +1,13 @@
 import "./audio.css";
 import "./app.css";
 import "./seattle.css";
-import "./header2.css";
+// import "./header2.css";
 
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
 
 import ArtistMarquee from "./components/artistmarquee";
-// import Edge from "./components/edge";
+import Edge from "./components/edge";
 
 
 // -----------------------------------------------------------------------------
@@ -105,10 +105,10 @@ function NeonHeader({ nowPlaying }) {
 
       <br />
 
-
+{/*  START OF HORIZONTAL MENU 
       {/* ---------------------------------------------------------------------
     GLOBAL NAVIGATION
-   --------------------------------------------------------------------- */}
+   --------------------------------------------------------------------- 
 
 <div className="nav-wrapper">
 
@@ -129,7 +129,7 @@ function NeonHeader({ nowPlaying }) {
 
     {/* ---------------------------------------------------------------
         DJ DROPDOWN
-       --------------------------------------------------------------- */}
+       --------------------------------------------------------------- 
 
     <div
       className="nav-dropdown"
@@ -190,7 +190,7 @@ function NeonHeader({ nowPlaying }) {
     </div>
 {/* ---------------------------------------------------------------
     PODCAST DROPDOWN
-   --------------------------------------------------------------- */}
+   --------------------------------------------------------------- 
 
 <div
   className="nav-dropdown"
@@ -248,7 +248,7 @@ function NeonHeader({ nowPlaying }) {
 
     {/* ---------------------------------------------------------------
         AI LAB DROPDOWN
-       --------------------------------------------------------------- */}
+       --------------------------------------------------------------- 
 
     <div
       className="nav-dropdown"
@@ -294,7 +294,9 @@ function NeonHeader({ nowPlaying }) {
   </nav>
 
 </div>
-{/* START OF PODCAST MENU */}
+{/* END OF PODCAST MENU 
+
+ */}
 
       {/* ---------------------------------------------------------------------
           START OF MARQUEE HEADER
@@ -390,11 +392,11 @@ function Layout({ children, nowPlaying }) {
 
       {/* ---------------------------------------------------------------------
           GLOBAL EDGE MENU SYSTEM
-         --------------------------------------------------------------------- */}
-{/*
+         --------------------------------------------------------------------- 
+*/}
       <Edge />
 
- */}
+ 
       {/* ---------------------------------------------------------------------
           GLOBAL HEADER
          --------------------------------------------------------------------- */}

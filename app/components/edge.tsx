@@ -4,6 +4,8 @@ import {
   useState,
 } from "react";
 
+import { Link } from "react-router";
+
 import "../styles/edge.css";
 
 
@@ -15,9 +17,12 @@ export default function Edge() {
 
   const [open, setOpen] = useState(false);
 
+  const [djOpen, setDjOpen] = useState(false);
+  const [podcastOpen, setPodcastOpen] = useState(false);
+  const [aiOpen, setAiOpen] = useState(false);
+
   const triggerRef = useRef<HTMLDivElement | null>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
-
 
   /* ---------------------------------------------------------
      EDGE MENU OPEN / CLOSE
@@ -646,8 +651,11 @@ export default function Edge() {
         {/* -----------------------------------------------------
             HOME
            ----------------------------------------------------- */}
-
-        <div className="edge-icon">
+{/* IMAGE VERSION
+        <Link
+          to="/"
+          className="edge-icon"
+        >
 
           <img
             src="/edge/home.svg"
@@ -658,61 +666,273 @@ export default function Edge() {
             Home
           </span>
 
-        </div>
+        </Link>
+ */}
 
+<Link
+  to="/"
+  className="edge-icon"
+>
+  <span className="edge-symbol">
+    ⌂
+  </span>
+
+  <span className="hint">
+    Home
+  </span>
+</Link>
 
         {/* -----------------------------------------------------
             ARTISTS
            ----------------------------------------------------- */}
 
-        <div className="edge-icon">
+        <Link
+  to="/artists"
+  className="edge-icon"
+>
+  <span className="edge-symbol">
+    ♫
+  </span>
 
-          <img
-            src="/edge/artists.svg"
-            alt="artists"
-          />
+  <span className="hint">
+    Artists
+  </span>
+</Link>
 
-          <span className="hint">
-            Artists
-          </span>
+
+        {/* -----------------------------------------------------
+            PLAYLIST
+           ----------------------------------------------------- */}
+
+       <Link
+  to="/playlist"
+  className="edge-icon"
+>
+  <span className="edge-symbol">
+    ☷
+  </span>
+
+  <span className="hint">
+    PlayList
+  </span>
+</Link>
+
+
+        {/* -----------------------------------------------------
+            DJs
+           ----------------------------------------------------- */}
+
+        <div
+          className="edge-group"
+          onMouseEnter={() => setDjOpen(true)}
+          onMouseLeave={() => setDjOpen(false)}
+        >
+
+          <button
+            type="button"
+            className="edge-icon edge-button"
+            onClick={() =>
+              setDjOpen((open) => !open)
+            }
+            aria-expanded={djOpen}
+            aria-haspopup="true"
+          >
+
+            <span className="edge-symbol">
+              🎧
+            </span>
+
+            <span className="hint">
+              DJs
+            </span>
+
+          </button>
+
+
+          {djOpen && (
+
+            <div className="edge-flyout">
+
+              <Link to="/djpage/resident">
+                Resident DJs
+              </Link>
+
+              <Link to="/djpage/welcome">
+                DJ Welcome Guide
+              </Link>
+
+              <Link to="/djpage/schedule">
+                Schedule
+              </Link>
+
+              <Link to="/djpage">
+                DJ Home
+              </Link>
+
+            </div>
+
+          )}
 
         </div>
 
 
         {/* -----------------------------------------------------
-            RADIO
+            PODCASTS
            ----------------------------------------------------- */}
 
-        <div className="edge-icon">
+        <div
+          className="edge-group"
+          onMouseEnter={() => setPodcastOpen(true)}
+          onMouseLeave={() => setPodcastOpen(false)}
+        >
 
-          <img
-            src="/edge/radio.svg"
-            alt="radio"
-          />
+          <button
+            type="button"
+            className="edge-icon edge-button"
+            onClick={() =>
+              setPodcastOpen((open) => !open)
+            }
+            aria-expanded={podcastOpen}
+            aria-haspopup="true"
+          >
 
-          <span className="hint">
-            Radio
-          </span>
+            <span className="edge-symbol">
+              🎙
+            </span>
+
+            <span className="hint">
+              Podcasts
+            </span>
+
+          </button>
+
+
+          {podcastOpen && (
+
+            <div className="edge-flyout">
+
+              <Link to="/podcast/artists-interview">
+                Artist Interviews
+              </Link>
+
+              <Link to="/podcast/station-programs">
+                Station Programs
+              </Link>
+
+            </div>
+
+          )}
 
         </div>
+
+
+        {/* -----------------------------------------------------
+            REGISTER
+           ----------------------------------------------------- */}
+
+        <Link
+          to="/register"
+          className="edge-icon"
+        >
+
+          <span className="edge-symbol">
+            ✦
+          </span>
+
+          <span className="hint">
+            Register
+          </span>
+
+        </Link>
 
 
         {/* -----------------------------------------------------
             ABOUT
            ----------------------------------------------------- */}
 
-        <div className="edge-icon">
+        <Link
+  to="/about"
+  className="edge-icon"
+>
+  <span className="edge-symbol">
+    ⓘ
+  </span>
 
-          <img
-            src="/edge/about.svg"
-            alt="about"
-          />
+  <span className="hint">
+    About
+  </span>
+</Link>
 
-          <span className="hint">
-            About
+
+        {/* -----------------------------------------------------
+            SUBMIT
+           ----------------------------------------------------- */}
+
+        <Link
+          to="/submit"
+          className="edge-icon"
+        >
+
+          <span className="edge-symbol">
+            ↑
           </span>
 
+          <span className="hint">
+            Submit
+          </span>
+
+        </Link>
+
+
+        {/* -----------------------------------------------------
+            AI LAB
+           ----------------------------------------------------- */}
+
+        <div
+          className="edge-group"
+          onMouseEnter={() => setAiOpen(true)}
+          onMouseLeave={() => setAiOpen(false)}
+        >
+
+          <button
+            type="button"
+            className="edge-icon edge-button"
+            onClick={() =>
+              setAiOpen((open) => !open)
+            }
+            aria-expanded={aiOpen}
+            aria-haspopup="true"
+          >
+
+            <span className="edge-symbol">
+              ⚡
+            </span>
+
+            <span className="hint">
+              AI Lab
+            </span>
+
+          </button>
+
+
+          {aiOpen && (
+
+            <div className="edge-flyout">
+
+              <Link to="/ai-artists">
+                AI Artists
+              </Link>
+
+              <Link to="/submit-ai">
+                Submit AI
+              </Link>
+
+            </div>
+
+          )}
+
         </div>
+
 
       </div>
 
