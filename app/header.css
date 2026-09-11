@@ -166,3 +166,11 @@
 }
 
 }
+
+.billboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: clamp(14px, 4vw, 60px);
+}

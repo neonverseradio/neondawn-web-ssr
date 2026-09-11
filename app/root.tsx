@@ -2,6 +2,7 @@ import "./audio.css";
 import "./app.css";
 import "./seattle.css";
 // import "./header2.css";
+import "./header.css";
 
 import { Meta, Links, Scripts, Outlet, Link } from "react-router";
 import { useState, useEffect } from "react";
@@ -308,15 +309,34 @@ function NeonHeader({ nowPlaying }) {
           END OF MARQUEE HEADER
          --------------------------------------------------------------------- */}
 <br /> 
-<img
+{/* ---------------------------------------------------------------------
+          HEADER.CSS
+         --------------------------------------------------------------------- */}
+
+
+  <a
+  href="https://www.facebook.com/share/p/18tfiXcsuu/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
     src="/artists/martyrs/martyrs-interview.png"
-    alt="Martyrs — Artist of the Month"
+    alt="Martyrs — Exclusive Artist Interview"
     className="enter-button"
-   
-  /> 
+  />
+</a>
+<br /><br />
+  <img
+    src="/header/header1.png"
+    alt="NeonVerse Radio — Latest Indie Music"
+  
+  />
+
+
     </header>
   );
 }
+
 
 
 // -----------------------------------------------------------------------------
