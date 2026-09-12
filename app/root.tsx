@@ -1,3 +1,4 @@
+
 import "./audio.css";
 import "./app.css";
 import "./seattle.css";
@@ -19,6 +20,12 @@ function NeonHeader({ nowPlaying }) {
   const [aiOpen, setAiOpen] = useState(false);
    const [djOpen, setDjOpen] = useState(false);
    const [podcastOpen, setPodcastOpen] = useState(false);
+
+   const [twitchParent, setTwitchParent] = useState("");
+
+useEffect(() => {
+  setTwitchParent(window.location.hostname);
+}, []);
 
   return (
     <header className="neon-header">
@@ -329,8 +336,19 @@ function NeonHeader({ nowPlaying }) {
   <img
     src="/header/header1.png"
     alt="NeonVerse Radio — Latest Indie Music"
-  
+  className="aotm-img"
   />
+  <br /><br />
+  
+  {twitchParent && (
+  <div className="twitch-live-frame">
+    <iframe
+      src={`https://player.twitch.tv/?channel=futurecitylive&parent=${twitchParent}&autoplay=false`}
+      allowFullScreen
+      title="Future City Live"
+    />
+  </div>
+)}
 
 
     </header>
