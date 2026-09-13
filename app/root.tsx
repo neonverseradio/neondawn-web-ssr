@@ -60,9 +60,7 @@ useEffect(() => {
         Signal initializing…
       </p>
 
-      <h3>
-        — grid link established —
-      </h3>
+       <h3>🔴 LIVE // FUTURE CITY TRANSMISSION</h3>
 
 
       {/* ---------------------------------------------------------------------
@@ -97,7 +95,20 @@ useEffect(() => {
               </p>
             </div>
 
-          </div>
+          </div> <br /><br />
+{/* -----------------------------------------------------------------
+              TWITCH 
+             ----------------------------------------------------------------- */}
+            
+{twitchParent && (
+  <div className="twitch-live-frame">
+    <iframe
+      src={`https://player.twitch.tv/?channel=futurecitylive&parent=${twitchParent}&autoplay=false`}
+      allowFullScreen
+      title="Future City Live"
+    />
+  </div>
+)}
 
 
           {/* -----------------------------------------------------------------
@@ -338,19 +349,9 @@ useEffect(() => {
     alt="NeonVerse Radio — Latest Indie Music"
   className="aotm-img"
   />
-  <br /><br />
+  <br />
   
-  {twitchParent && (
-  <div className="twitch-live-frame">
-    <iframe
-      src={`https://player.twitch.tv/?channel=futurecitylive&parent=${twitchParent}&autoplay=false`}
-      allowFullScreen
-      title="Future City Live"
-    />
-  </div>
-)}
-
-
+  
     </header>
   );
 }
