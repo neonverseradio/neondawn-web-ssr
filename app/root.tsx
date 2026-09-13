@@ -59,8 +59,9 @@ useEffect(() => {
       <p className="broadcast">
         Signal initializing…
       </p>
-
-       <h3>🔴 LIVE // FUTURE CITY TRANSMISSION</h3>
+<p>🔴 LIVE // FUTURE CITY TRANSMISSION</p>
+             
+       <p>TWO SIGNALS // ONE TRANSMISSION // ACTIVATE BOTH</p>
 
 
       {/* ---------------------------------------------------------------------
