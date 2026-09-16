@@ -29,7 +29,7 @@ export default function Submit() {
           <li>Control – Ilovemakonnen / YTC</li>
           <li>Bunnies in the Clover – Luna's Wereld</li>
           <li>Hackers – White Bat Audio / Karl Casey</li>
-          <li>Baby Youre A Big Star Now – Arwin Goldwin</li>
+          <li>Baby Youre A Big Star Now – Arlin Godwin</li>
           <li>Without You – The Octopus Division</li>
         </ul>
       </section>
@@ -43,20 +43,20 @@ export default function Submit() {
         <ul className="playlist-list">
           <li>Time to Shine – Niya</li>
           <li>Twist the Cap (Church Street Ep.) – Martyrs</li>
-          <li>Baby You're a Big Star Now – Arwin Godwin</li>
+          <li>If You Don't Love Me – Arlin Godwin</li>
           <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
           <li>Future City Glows – Neonverse Radio</li>
           <li>Neon Gridlock – Neon Dawn</li>
           <li>Hackers – White Bat Audio / Karl Casey</li>
           <li>Time and Space – Novelley</li>
-          <li>Two Masters Two Relics – Neon Dawn</li>
+          <li>The Octopus Division – 01 Shine</li>
           <li>Over the Skyline – Lila Monroe</li>
           <li>Spray U – XD:I</li>
           <li>Control – Ilovemakonnen / YTC</li>
           <li>Afternoon Rush – Neonverse Radio</li>
           <li>Lost (feat. Evolution) – Lynney Williamson</li>
           <li>Woosah Radio Edit – Bocha</li>
-           <li>Without You – The Octopus Division</li>
+           <li>Cloudy – Tsar Moon</li>
         </ul>
       
       </section>
@@ -71,7 +71,7 @@ export default function Submit() {
           <li>When Angels Sing – Mystic Fever / Kurt Vereecke</li>
     <li>Drowning Days – Martyrs</li>
     <li>Stuntin on Em (193 YTC Mak) – Ilovemakonnen / YTC</li>
-    <li>Two Masters Two Relics – Neon Dawn</li>
+    <li>If You Don't Love Me – Arlin Godwin</li>
     <li>Neon Gridlock – Neon Dawn</li>
     <li>Baby You're a Big Star Now – Arwin Godwin</li>
     <li>Hackers – White Bat Audio / Karl Casey</li>
@@ -84,7 +84,8 @@ export default function Submit() {
     <li>Lost Ally – Novelley</li>
     <li>Woosah Radio Edit – Bocha</li>
     <li>Time to Shine – Niya</li>
-     <li>Without You – The Octopus Division</li>
+    <li>The Octopus Division – 01 Shine</li>
+    <li>Cloudy – Tsar Moon</li>
 
         </ul>
       </section>
