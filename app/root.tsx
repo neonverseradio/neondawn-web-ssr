@@ -334,12 +334,12 @@ useEffect(() => {
 
 
   <a
-  href="https://www.facebook.com/share/p/18tfiXcsuu/"
+  href="https://www.facebook.com/share/p/1BAMqSsMtp/"
   target="_blank"
   rel="noopener noreferrer"
 >
   <img
-    src="/artists/martyrs/martyrs-interview.png"
+    src="/artists/martyrs/martyrsboard1.png"
     alt="Martyrs — Exclusive Artist Interview"
     className="enter-button"
   />
