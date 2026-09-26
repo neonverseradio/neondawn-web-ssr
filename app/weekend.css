@@ -1,0 +1,27 @@
+/* =========================================================
+   NEONVERSE WEEKEND
+   GLOBAL AUDIO PLAYER
+   ========================================================= */
+
+.global-player {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 24px auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+/* AUDIO ELEMENT */
+
+.player-audio {
+  display: block;
+
+  width: 100%;
+  height: 54px;
+
+  margin: 0 auto;
+}
