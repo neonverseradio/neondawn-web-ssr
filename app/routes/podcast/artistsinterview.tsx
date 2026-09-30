@@ -17,6 +17,21 @@ const PODCAST_EPISODES = [
     description2:
       "A closer look into the artist, the music and the creative world behind the signal.",
   },
+
+  {
+    id: "002",
+    artist: "MARTYRS",
+    title: "Artist of the Month Interview",
+    image: "/artists/martyrs/martyrs3.jpg",
+    spotifyEmbed:
+      "https://open.spotify.com/embed/episode/54PHUoi32ZPZhwYda9iDf9?utm_source=generator",
+    spotifyLink:
+      "https://open.spotify.com/episode/54PHUoi32ZPZhwYda9iDf9?si=f6XEDAYDRd2LqqyliKLwdQ",
+    description1:
+      "From the NeonVerse Radio archives, MARTYRS MICHAEL joins us for an Artist of the Month conversation from the Future City.",
+    description2:
+      "A closer look into the artist, the music and the creative world behind the signal.",
+  },
 ];
 
 
